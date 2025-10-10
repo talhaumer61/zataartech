@@ -6,11 +6,11 @@
         <a href="/">
             <span class="sr-only">Home</span>
             <figure class="lg:max-w-[198px] lg:block hidden">
-            <img src="{{asset('images/shared/logo.png')}}" alt="NextSaaS" class="dark:invert">
+            <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="dark:invert">
             </figure>
             <figure class="max-w-[120px] lg:hidden block">
-            <img src="{{asset('images/shared/logo.png')}}" alt="NextSaaS" class="w-full dark:hidden block">
-            <img src="{{asset('images/shared/logo.png')}}" alt="NextSaaS" class="w-full dark:block hidden">
+            <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="w-full dark:hidden block">
+            <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="w-full dark:block hidden">
             </figure>
         </a>
         </div>
@@ -76,8 +76,8 @@
             <a href="/">
             <span class="sr-only">Home</span>
             <figure class="max-w-[120px]">
-                <img src="{{asset('images/shared/logo.png')}}" alt="NextSaaS" class="w-full dark:hidden block">
-                <img src="{{asset('images/shared/logo.png')}}" alt="NextSaaS" class="w-full dark:block hidden">
+                <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="w-full dark:hidden block">
+                <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="w-full dark:block hidden">
             </figure>
             </a>
             <button

@@ -12,7 +12,7 @@
       </figure>
 
       <p class="mt-6 mb-4 text-xl max-w-[626px] text-center mx-auto max-sm:text-tagline-2 max-sm:px-2">
-        NextSaaS was born from a simple idea: What if the tools we use to run our businesses made
+        Zataar Tech was born from a simple idea: What if the tools we use to run our businesses made
         things easier? We're building a platform that scales with you, adapts to your needs, and
         grows with your team.
       </p>

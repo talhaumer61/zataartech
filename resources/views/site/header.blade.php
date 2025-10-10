@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description"
-    content="NextSaaS - Modern HTML template collection with 35+ home page variations for SaaS businesses, startups, and web applications. Features responsive design, authentication pages, pricing, blog, and more with Tailwind CSS and Vite.">
+    content="Zataar Tech - Modern HTML template collection with 35+ home page variations for SaaS businesses, startups, and web applications. Features responsive design, authentication pages, pricing, blog, and more with Tailwind CSS and Vite.">
     <meta name="keywords" content="HTML,Tailwind CSS, JavaScript">
-    <meta name="author" content="NextSaaS">
+    <meta name="author" content="Zataar Tech">
     <link rel="icon" type="image/png" href="{{asset('favicon-96x96.png')}}" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="{{asset('favicon.svg')}}">
     <link rel="shortcut icon" href="favicon.ico">

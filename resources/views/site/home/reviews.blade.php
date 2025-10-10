@@ -8,7 +8,7 @@
         Real apps. Real results.
       </h2>
       <p data-ns-animate="" data-delay="0.3" class="max-w-[490px] max-[426px]:text-tagline-2 max-[426px]:max-w-[320px]" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-        "Real apps. Real results. "Nextsaas delivered our entire platform ahead of schedule—flawless
+        "Real apps. Real results. "Zataar Tech delivered our entire platform ahead of schedule—flawless
         execution and real partnership."
       </p>
     </div>

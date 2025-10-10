@@ -192,7 +192,7 @@ Content list v3  section
           <div class="space-y-3">
             <h4 data-ns-animate="" data-delay="0.1" class="text-heading-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">What our users say</h4>
             <p data-ns-animate="" data-delay="0.2" class="text-tagline-1" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-              “Nextsaas delivered our entire platform ahead of schedule—flawless execution and real
+              “Zataar Tech delivered our entire platform ahead of schedule—flawless execution and real
               partnership.”
             </p>
           </div>

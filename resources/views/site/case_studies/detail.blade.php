@@ -83,7 +83,7 @@ Testimonial section
         </h4>
         <blockquote>
           <p data-ns-animate="" data-delay="0.2" style="opacity: 0; filter: blur(16px); translate: none; rotate: none; scale: none; transform: translate(0px, 60px);">
-            "Nextsaas delivered our entire platform ahead of schedule—flawless execution and real
+            "Zataar Tech delivered our entire platform ahead of schedule—flawless execution and real
             partnership."
           </p>
         </blockquote>
@@ -96,7 +96,7 @@ Testimonial section
         </figure>
         <blockquote cite="https://velocityfinance.com">
           <p class="text-white dark:text-accent/60">
-            "NextSaaS transformed our reporting process, reducing what used to take hours into just
+            "Zataar Tech transformed our reporting process, reducing what used to take hours into just
             a few clicks. It has become our definitive source of truth, streamlining our operations
             and enhancing our decision-making capabilities."
           </p>

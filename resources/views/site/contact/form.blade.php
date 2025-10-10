@@ -45,7 +45,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Email Us</p>
                 <p class="text-accent/60">
-                  <a href="mailto:hello@nextsaaS.com">hello@nextsaaS.com</a>
+                  <a href="mailto:hello@Zataar Tech.com">hello@Zataar Tech.com</a>
                 </p>
               </div>
             </div>
