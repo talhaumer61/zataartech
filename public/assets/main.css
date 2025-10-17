@@ -27474,3 +27474,30 @@ svg.leaflet-zoom-animated {
     opacity: .5;
   }
 }
+/* Keep dropdown open when hovering between trigger and menu */
+.nav-item {
+position: relative;
+}
+
+.nav-item > a,
+.nav-item > div {
+transition: all 0.2s ease;
+}
+
+/* Create an invisible bridge so the cursor doesn’t "leave" */
+.nav-item::after {
+content: '';
+position: absolute;
+top: 100%;
+left: 0;
+height: 12px; /* adjust if needed */
+width: 100%;
+background: transparent;
+}
+
+/* Ensure dropdown doesn’t flicker when moving between items */
+.nav-item:hover > div {
+opacity: 1 !important;
+visibility: visible !important;
+pointer-events: auto;
+}

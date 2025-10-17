@@ -22,16 +22,64 @@
                     Home
                 </a>
             </li>
-            <li class="py-2.5">
+            <li class="relative nav-item cursor-pointer py-2.5 group">
+                <a href="#" class="nav-item-link flex items-center gap-1 px-4 py-2 border border-transparent rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent">
+                    <span>Services</span>
+                    <span class="nav-arrow block origin-center transition-all duration-300 translate-y-px">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg>
+                    </span>
+                </a>
+
+                <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                    <div class="bg-white dark:bg-background-6 rounded-[20px] px-[60px] py-[50px] border border-stroke-1 dark:border-stroke-6 shadow-xl min-w-[280px] w-full">
+                        <ul class="space-y-5">
+                            <li>
+                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
+                                    <span>Web Development</span>
+                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
+                                    <span>App Development</span>
+                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
+                                    <span>SEO</span>
+                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            {{-- <li class="py-2.5">
                 <a href="/services"
                     class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent {=$nav-item-class}">
                     Services
                 </a>
-            </li>
+            </li> --}}
             <li class="py-2.5">
-                <a href="/case-studies"
+                <a href="/success-stories"
                     class="flex items-center gap-1 px-4 py-2 border border-transparent hover:border-stroke-2 dark:hover:border-stroke-7 rounded-full text-tagline-1 font-normal text-secondary/60 hover:text-secondary transition-all duration-200 dark:text-accent/60 dark:hover:text-accent {=$nav-item-class}">
-                    Case Studies
+                    Success Stories
                 </a>
             </li>
             <li class="py-2.5">
@@ -96,13 +144,37 @@
                     </a>
                 </li>
                 <li class="relative space-y-0">
-                    <a href="/services" class="sub-menu text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between cursor-pointer">
+                    <button class="sub-menu text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between cursor-pointer">
                         <span>Services</span>
-                    </a>
+                        <span class="sub-menu-arrow transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        </span>
+                    </button>
+                    <div class="hidden ml-3.5 transition-all duration-300 w-full bg-white dark:bg-background-7 max-h-[500px] overflow-y-auto scroll-bar">
+                        <ul>
+                        <li>
+                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
+                            Services 01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
+                            Services 02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
+                            Services 03
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="relative space-y-0">
-                    <a href="/case-studies" class="sub-menu text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between cursor-pointer">
-                        <span>Case Studies</span>
+                    <a href="/success-stories" class="sub-menu text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between cursor-pointer">
+                        <span>Success Stories</span>
                     </a>
                 </li>
                 <li class="relative space-y-0">

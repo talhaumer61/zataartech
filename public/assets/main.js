@@ -2525,7 +2525,7 @@ const themeSwitcher = {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const storedTheme = localStorage.getItem("color-theme");
     // const isDark = storedTheme === "dark" || !storedTheme && prefersDark;
-    const isDark =  false;
+    const isDark =  true;
     this.setTheme(isDark ? "dark" : "light");
   },
   bindEvents() {
