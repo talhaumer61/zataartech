@@ -63,13 +63,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     Product-led growth vs sales-led growth which one wins
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span>Read more</span>
                   </a>
                 </div>
@@ -125,13 +125,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     Our saas seo strategy 6 months, 300% organic traffic growth
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span>Read more</span>
                   </a>
                 </div>
@@ -187,13 +187,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     Decoding saas consolidation what it means for founders
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span>Read more</span>
                   </a>
                 </div>
@@ -249,13 +249,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     Digital is making place in funds back-office
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span>Read more</span>
                   </a>
                 </div>
@@ -311,13 +311,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     A customized electronic prescription designed specifically
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span>Read more</span>
                   </a>
                 </div>
@@ -373,13 +373,13 @@
                 </div>
 
                 <h3 class="font-normal sm:text-heading-5 text-tagline-1 line-clamp-2 mb-4">
-                  <a href="/case-studies/test-study" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" aria-label="Read full article about electronic prescription in finance sector">
                     Raising your first round saas fundraising tips from the trenches
                   </a>
                 </h3>
 
                 <div>
-                  <a href="/case-studies/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
+                  <a href="/success-stories/test-study" class="btn btn-md btn-white hover:btn-primary dark:btn-transparent inline-block" aria-label="Read full article about electronic prescription in finance sector">
                     <span> Read more</span>
                   </a>
                 </div>
@@ -440,7 +440,7 @@
               </figure>
               <div class="space-y-1 flex-1">
                 <h4 class="text-tagline-1">
-                  <a href="/case-studies/test-study"> We've mastered saas pricing models </a>
+                  <a href="/success-stories/test-study"> We've mastered saas pricing models </a>
                 </h4>
 
                 <p class="text-tagline-3">1 May 2024</p>
@@ -453,7 +453,7 @@
               </figure>
               <div class="space-y-1 flex-1">
                 <h4 class="text-tagline-1">
-                  <a href="/case-studies/test-study">
+                  <a href="/success-stories/test-study">
                     Decoding saas consolidation what it means for founders
                   </a>
                 </h4>
@@ -468,7 +468,7 @@
               </figure>
               <div class="space-y-1 flex-1">
                 <h4 class="text-tagline-1">
-                  <a href="/case-studies/test-study">
+                  <a href="/success-stories/test-study">
                     Digital is making place in funds back-office
                   </a>
                 </h4>
@@ -526,7 +526,7 @@
 
     <ul data-ns-animate="" data-delay="0.2" class="flex items-center justify-center mt-14 gap-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
       <li class="group">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center justify-center border border-stroke-3 dark:border-stroke-7 rounded-full hover:bg-primary-500 duration-300 group">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center justify-center border border-stroke-3 dark:border-stroke-7 rounded-full hover:bg-primary-500 duration-300 group">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
               <path d="M12.5 6H1.5M1.5 6L6 1.5M1.5 6L6 10.5" class="stroke-secondary dark:stroke-accent group-hover:stroke-white duration-300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -535,32 +535,32 @@
         </a>
       </li>
       <li class="group page-active">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]:bg-primary-500 group-[.page-active]:text-accent dark:group-[.page-active]:text-accent">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]:bg-primary-500 group-[.page-active]:text-accent dark:group-[.page-active]:text-accent">
           1
         </a>
       </li>
       <li class="group">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
           2
         </a>
       </li>
       <li class="group">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
           3
         </a>
       </li>
       <li class="group max-md:hidden">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
           4
         </a>
       </li>
       <li class="group max-md:hidden">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center text-tagline-2 font-medium justify-center rounded-full dark:text-accent hover:bg-primary-500 duration-300 hover:text-accent group-[.page-active]::bg-primary-500">
           5
         </a>
       </li>
       <li class="group">
-        <a href="/case-studies/test-study" class="flex w-10 h-10 items-center justify-center border border-stroke-3 dark:border-stroke-7 rounded-full hover:bg-primary-500 duration-300 group">
+        <a href="/success-stories/test-study" class="flex w-10 h-10 items-center justify-center border border-stroke-3 dark:border-stroke-7 rounded-full hover:bg-primary-500 duration-300 group">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
               <path d="M1.5 6H12.5M12.5 6L8 1.5M12.5 6L8 10.5" class="stroke-secondary dark:stroke-accent group-hover:stroke-white duration-300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>

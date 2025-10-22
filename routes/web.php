@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\admin\AdminAboutUsController;
+use App\Http\Controllers\admin\AdminContactInfoController;
+use App\Http\Controllers\admin\AdminServicesController;
+use App\Http\Controllers\admin\AdminSuccessStoriesController;
+use App\Http\Controllers\admin\AdminTeamsController;
+use App\Http\Controllers\admin\AdminTestimonialsController;
 use App\Http\Controllers\site\AboutUsController;
 use App\Http\Controllers\site\SuccessStoriesController;
 use App\Http\Controllers\site\ContactUsController;
@@ -17,4 +23,45 @@ Route::get('/success-stories/{href}', [SuccessStoriesController::class, 'detail'
 
 Route::get('/about-us', [AboutUsController::class, 'index'])->name('about');
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact');
+
+// ADMIN ROUTES
+Route::get('/portal', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+// ✅ Service Routes
+Route::get('/portal/services/{action?}/{href?}', [AdminServicesController::class, 'index'])->name('admin.services');
+Route::post('/portal/services/store', [AdminServicesController::class, 'store'])->name('admin.services.store');
+Route::post('/portal/services/update/{id}', [AdminServicesController::class, 'update'])->name('admin.services.update');
+Route::delete('/portal/services/delete/{id}', [AdminServicesController::class, 'destroy'])->name('admin.services.delete');
+
+// ✅ Success Stories Routes
+Route::get('/portal/success-stories/{action?}/{href?}', [AdminSuccessStoriesController::class, 'index'])->name('admin.success-stories');
+Route::post('/portal/success-stories/store', [AdminSuccessStoriesController::class, 'store'])->name('admin.success-stories.store');
+Route::post('/portal/success-stories/update/{id}', [AdminSuccessStoriesController::class, 'update'])->name('admin.success-stories.update');
+Route::delete('/portal/success-stories/delete/{id}', [AdminSuccessStoriesController::class, 'destroy'])->name('admin.success-stories.delete');
+
+// ✅ Testimonials Routes
+Route::get('/portal/testimonials/{action?}/{href?}', [AdminTestimonialsController::class, 'index'])->name('admin.testimonials');
+Route::post('/portal/testimonials/store', [AdminTestimonialsController::class, 'store'])->name('admin.testimonials.store');
+Route::post('/portal/testimonials/update/{id}', [AdminTestimonialsController::class, 'update'])->name('admin.testimonials.update');
+Route::delete('/portal/testimonials/delete/{id}', [AdminTestimonialsController::class, 'destroy'])->name('admin.testimonials.delete');
+
+// ✅ Teams Routes
+Route::get('/portal/teams/{action?}/{href?}', [AdminTeamsController::class, 'index'])->name('admin.teams');
+Route::post('/portal/teams/store', [AdminTeamsController::class, 'store'])->name('admin.teams.store');
+Route::post('/portal/teams/update/{id}', [AdminTeamsController::class, 'update'])->name('admin.teams.update');
+Route::delete('/portal/teams/delete/{id}', [AdminTeamsController::class, 'destroy'])->name('admin.teams.delete');
+
+// ✅ About Us Routes
+Route::get('/portal/about-us/{action?}/{id?}', [AdminAboutUsController::class, 'index'])->name('admin.aboutus');
+Route::post('/portal/about-us/store', [AdminAboutUsController::class, 'store'])->name('admin.aboutus.store');
+Route::post('/portal/about-us/update/{id}', [AdminAboutUsController::class, 'update'])->name('admin.aboutus.update');
+Route::delete('/portal/about-us/delete/{id}', [AdminAboutUsController::class, 'destroy'])->name('admin.aboutus.delete');
+
+// ✅ Contact Info Routes
+
+Route::get('/portal/contact-info/{action?}/{id?}', [AdminContactInfoController::class, 'index'])->name('admin.contactinfo');
+Route::post('/portal/contact-info/store', [AdminContactInfoController::class, 'store'])->name('admin.contactinfo.store');
+Route::post('/portal/contact-info/update/{id}', [AdminContactInfoController::class, 'update'])->name('admin.contactinfo.update');
+Route::delete('/portal/contact-info/delete/{id}', [AdminContactInfoController::class, 'destroy'])->name('admin.contactinfo.delete');
 
