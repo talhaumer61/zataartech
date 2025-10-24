@@ -6,7 +6,8 @@
         <a href="/">
             <span class="sr-only">Home</span>
             <figure class="lg:max-w-[198px] lg:block hidden">
-            <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="dark:invert">
+            <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech">
+            {{-- <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="dark:invert"> --}}
             </figure>
             <figure class="max-w-[120px] lg:hidden block">
             <img src="{{asset('images/shared/logo.png')}}" alt="Zataar Tech" class="w-full dark:hidden block">
@@ -35,40 +36,24 @@
                 <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                     <div class="bg-white dark:bg-background-6 rounded-[20px] px-[60px] py-[50px] border border-stroke-1 dark:border-stroke-6 shadow-xl min-w-[280px] w-full">
                         <ul class="space-y-5">
-                            <li>
-                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
-                                    <span>Web Development</span>
-                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
-                                    <span>App Development</span>
-                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/services/web-development" class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200">
-                                    <span>SEO</span>
-                                    <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </span>
-                                </a>
-                            </li>
+                            @foreach($global_services as $service)
+                                <li>
+                                    <a href="{{ url('services/' . $service->href) }}"
+                                    class="text-secondary/60 dark:text-accent/60 dark:hover:text-accent flex items-center gap-1 font-normal text-tagline-1 hover:text-secondary transition-all duration-200 group/item">
+                                        <span>{{ $service->title }}</span>
+                                        <span class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-2 transition-all duration-200">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 12L12 8L8 4" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </li>
+
 
             {{-- <li class="py-2.5">
                 <a href="/services"
@@ -98,7 +83,7 @@
         </nav>
 
         <div class="lg:flex hidden items-center justify-center">
-        <a href="#"
+        <a href="/contact-us#contactForm"
             class="btn btn-md btn-secondary dark:btn-accent dark:hover:btn-white-dark hover:btn-white">
             <span>Get started</span>
         </a>
@@ -196,3 +181,4 @@
 </header>
 
 <main>
+    {{-- @include('site.sessionMsg') --}}

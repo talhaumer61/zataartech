@@ -7,19 +7,17 @@
       </div>
 
       <figure class="space-y-4 flex flex-col items-center justify-center">
-        <img src="{{asset('images/avatar/avatar-1.png')}}" alt="Avatar" class="size-10 bg-ns-yellow ring-2 ring-white rounded-full object-cover">
+        <img src="{{asset( $about->ceo_photo )}}" alt="Avatar" class="size-10 bg-ns-yellow ring-2 ring-white rounded-full object-cover">
         <figcaption class="text-tagline-2 font-medium dark:text-accent">From our CEO</figcaption>
       </figure>
 
-      <p class="mt-6 mb-4 text-xl max-w-[626px] text-center mx-auto max-sm:text-tagline-2 max-sm:px-2">
-        Zataar Tech was born from a simple idea: What if the tools we use to run our businesses made
-        things easier? We're building a platform that scales with you, adapts to your needs, and
-        grows with your team.
+      <p class=" container mt-6 mb-4 text-xl max-w-[626px] text-center mx-auto max-sm:text-tagline-2 max-sm:px-2">
+        {!! strip_tags($about->ceo_message) !!}
       </p>
 
-      <strong class="text-lg leading-[1.5] font-medium dark:text-accent">
+      {{-- <strong class="text-lg leading-[1.5] font-medium dark:text-accent">
         Daniel Carter, CEO &amp; Co-Founder
-      </strong>
+      </strong> --}}
     </div>
   </div>
 </section>

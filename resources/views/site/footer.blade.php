@@ -9,10 +9,27 @@
     <div class="grid grid-cols-12 lg:gap-x-8 xl:gap-x-0 gap-x-0 gap-y-16 xl:pt-[100px] pt-16 pb-16 justify-between">
       <div class="lg:col-span-4 col-span-12">
         <div data-ns-animate="" data-delay="0.3" class="xl:max-w-[306px]" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          <figure>
-            <img src="{{asset('images/shared/logo.png')}}" class="dark:hidden" alt="NextSass">
-            <img src="{{asset('images/shared/logo.png')}}" class="hidden dark:block" alt="NextSass">
+          <figure class="flex flex-col items-start">
+            <!-- Logo -->
+            <img src="{{ asset('images/shared/logo.png') }}" class="dark:hidden" alt="NextSass">
+            <img src="{{ asset('images/shared/logo.png') }}" class="hidden dark:block" alt="NextSass">
+
+            <!-- Flags below logo -->
+            <div class="flex items-center gap-3 mt-4">
+              <!-- USA Flag -->
+              <div class="w-8 h-8 rounded-full overflow-hidden border border-gray-300 shadow-sm flex items-center justify-center bg-white">
+                <img src="https://flagcdn.com/us.svg" alt="USA Flag"
+                    class="w-10 h-10 object-cover object-center scale-125">
+              </div>
+
+              <!-- Canada Flag -->
+              <div class="w-8 h-8 rounded-full overflow-hidden border border-gray-300 shadow-sm flex items-center justify-center bg-white">
+                <img src="https://flagcdn.com/ca.svg" alt="Canada Flag"
+                    class="w-10 h-10 object-cover object-center scale-125">
+              </div>
+            </div>
           </figure>
+
           <p class="mt-4 mb-7 text-secondary dark:text-accent">
             Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
           </p>
@@ -69,17 +86,29 @@
         </div>
       </div>
       <div class="lg:col-span-8 col-span-12 grid grid-cols-12 gap-x-0 gap-y-8">
-        <div class="col-span-12 md:col-span-4">
+        <div class="col-span-12 md:col-span-6">
           <div data-ns-animate="" data-delay="0.4" class="space-y-8" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             <p class="sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
               Company
             </p>
             <ul class="space-y-5">
               <li>
-                <a href="/about-us" class="footer-link-v2"> About Us </a>
+                <a href="/services" class="footer-link-v2"> Services </a>
               </li>
               <li>
-                <a href="/case-studies" class="footer-link-v2"> Case Studies </a>
+                <a href="/success-stories" class="footer-link-v2"> Success Stories </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <div data-ns-animate="" data-delay="0.5" class="space-y-8" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+            <p class="sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
+              Support
+            </p>
+            <ul class="space-y-5">
+              <li>
+                <a href="/about-us" class="footer-link-v2"> About Us </a>
               </li>
               <li>
                 <a href="/contact-us" class="footer-link-v2"> Contact Us </a>
@@ -87,25 +116,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-span-12 md:col-span-4">
-          <div data-ns-animate="" data-delay="0.5" class="space-y-8" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-            <p class="sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
-              Support
-            </p>
-            <ul class="space-y-5">
-              <li>
-                <a href="/about-us" class="footer-link-v2"> FAQ </a>
-              </li>
-              <li>
-                <a href="/about-us" class="footer-link-v2"> Tutorial </a>
-              </li>
-              <li>
-                <a href="contact-us" class="footer-link-v2"> Support </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-span-12 md:col-span-4">
+        {{-- <div class="col-span-12 md:col-span-4">
           <div data-ns-animate="" data-delay="0.6" class="space-y-8" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             <p class="sm:text-heading-6 text-tagline-1 font-normal text-secondary dark:text-accent">
               Legal Policies
@@ -124,7 +135,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> --}}
       </div>
     </div>
     <div class="pt-6 pb-[60px] text-center relative overflow-hidden">
@@ -134,21 +145,21 @@
       </p>
     </div>
   </div>
-  <!-- =========================
-Theme Toggle Button
-===========================-->
-{{-- <button id="theme-toggle" aria-label="Theme toggle button" class="size-12 bg-background-8 !z-[9999] dark:bg-white rounded-l-2xl cursor-pointer flex items-center justify-center fixed right-0 bottom-5">
-  <span id="dark-theme-icon" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-black">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"></path>
-    </svg>
-  </span>
-  <span id="light-theme-icon" class="hidden">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 stroke-white">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"></path>
-    </svg>
-  </span>
-</button> --}}
+    <!-- =========================
+    Theme Toggle Button
+    ===========================-->
+    {{-- <button id="theme-toggle" aria-label="Theme toggle button" class="size-12 bg-background-8 !z-[9999] dark:bg-white rounded-l-2xl cursor-pointer flex items-center justify-center fixed right-0 bottom-5">
+      <span id="dark-theme-icon" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 stroke-black">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"></path>
+        </svg>
+      </span>
+      <span id="light-theme-icon" class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6 stroke-white">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"></path>
+        </svg>
+      </span>
+    </button> --}}
 
   <script src="{{asset('vendor/swiper.min.js')}}"></script>
   <script src="{{asset('vendor/leaflet.min.js')}}"></script>

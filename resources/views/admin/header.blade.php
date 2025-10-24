@@ -18,17 +18,17 @@
                 <div class="logo-wrapper"> <a href="index.html"><img class="img-fluid for-light" src="{{asset('admin/images/logo/logo_dark.png')}}" alt="logo-light"><img class="img-fluid for-dark" src="../admin/images/logo/logo.png" alt="logo-dark"></a></div>
                 <div class="toggle-sidebar"> <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i></div>
             </div>
-            <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
+            {{-- <div class="left-header col-xxl-5 col-xl-6 col-lg-5 col-md-4 col-sm-3 p-0">
                 <div> <a class="toggle-sidebar" href="#"> <i class="iconly-Category icli"> </i></a>
                 <div class="d-flex align-items-center gap-2 ">
                     <h4 class="f-w-600">Welcome Alex</h4><img class="mt-0" src="{{asset('admin/images/hand.gif')}}" alt="hand-gif">
                 </div>
                 </div>
                 <div class="welcome-content d-xl-block d-none"><span class="text-truncate col-12">Here’s what’s happening with your store today. </span></div>
-            </div>
+            </div> --}}
             <div class="nav-right col-xxl-7 col-xl-6 col-md-7 col-8 pull-right right-header p-0 ms-auto">
                 <ul class="nav-menus"> 
-                <li class="d-md-block d-none"> 
+                {{-- <li class="d-md-block d-none"> 
                     <div class="form search-form mb-0">
                     <div class="input-group"><span class="input-icon">
                         <svg>
@@ -36,8 +36,8 @@
                         </svg>
                         <input class="w-100" type="search" placeholder="Search"></span></div>
                     </div>
-                </li>
-                <li class="d-md-none d-block"> 
+                </li> --}}
+                {{-- <li class="d-md-none d-block"> 
                     <div class="form search-form mb-0">
                     <div class="input-group"> <span class="input-show"> 
                         <svg id="searchIcon">
@@ -93,11 +93,11 @@
                         </div>
                     </div>
                     </div>
-                </li>
+                </li> --}}
                 <li> 
                     <div class="mode"><i class="moon" data-feather="moon"> </i></div>
                 </li>
-                <li class="onhover-dropdown notification-down">
+                {{-- <li class="onhover-dropdown notification-down">
                     <div class="notification-box"> 
                     <svg> 
                         <use href="{{asset('admin/svg/icon-sprite.svg#notification-header')}}"></use>
@@ -272,7 +272,7 @@
                         </div>
                     </div>
                     </div>
-                </li>
+                </li> --}}
                 <li class="profile-nav onhover-dropdown"> 
                     <div class="media profile-media"><img class="b-r-10" src="{{asset('admin/images/dashboard/profile.png')}}" alt="">
                     <div class="media-body d-xxl-block d-none box-col-none">
@@ -281,10 +281,8 @@
                     </div>
                     </div>
                     <ul class="profile-dropdown onhover-show-div">
-                    <li><a href="user-profile.html"><i data-feather="user"></i><span>My Profile</span></a></li>
-                    <li><a href="letter-box.html"><i data-feather="mail"></i><span>Inbox</span></a></li>
-                    <li> <a href="edit-profile.html"> <i data-feather="settings"></i><span>Settings</span></a></li>
-                    <li><a class="btn btn-pill btn-outline-primary btn-sm" href="login.html">Log Out</a></li>
+                    <li><a href="#"><i data-feather="user"></i><span>My Profile</span></a></li>
+                    <li><a class="btn btn-pill btn-outline-primary btn-sm" href="/admin/logout">Log Out</a></li>
                     </ul>
                 </li>
                 </ul>

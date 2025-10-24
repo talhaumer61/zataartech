@@ -78,6 +78,17 @@
           </a>
         </li>
         <li class="sidebar-list">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/contact-queries">
+            <svg class="stroke-icon"> 
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-user')}}"></use>
+            </svg>
+            <svg class="fill-icon">
+              <use href="{{asset('admin/svg/icon-sprite.svg#fill-user')}}"></use>
+            </svg>
+            <span>User Queries</span>
+          </a>
+        </li>
+        <li class="sidebar-list">
             <a class="sidebar-link sidebar-title active" href="#">
               <svg class="stroke-icon">
                 <use href="{{asset('admin/svg/icon-sprite.svg#stroke-knowledgebase')}}"></use>

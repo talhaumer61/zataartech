@@ -27501,3 +27501,7 @@ opacity: 1 !important;
 visibility: visible !important;
 pointer-events: auto;
 }
+
+.use_cases_para > ul > li{
+  color:white !important;
+}

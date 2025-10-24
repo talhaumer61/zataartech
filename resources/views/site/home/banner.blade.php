@@ -14,7 +14,7 @@
     <source src="video/Tube-dark.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
-    <div class="relative sm:pt-[280px] pt-[160px] pb-[140px] max-[641px]:pb-16 max-[426px]:pb-10 z-10">
+    <div class="relative sm:pt-[160px] pt-[160px] pb-[140px] max-[641px]:pb-16 max-[426px]:pb-10 z-10">
     <!-- Background shape-->
 
     <!-- Hero images  -->
@@ -85,17 +85,17 @@
         </p>
         <ul class="flex flex-col md:flex-row gap-4 mb-7 md:mb-14 max-md:w-full">
         <li data-ns-animate="" data-delay="0.3" data-direction="left" data-offset="50">
-            <a href="#"
+            <a href="/contact-us#contactForm"
             class="btn max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent">
-            <span>Get started</span>
+            <span>Get a Free Quote</span>
             </a>
         </li>
-        <li data-ns-animate="" data-delay="0.5" data-direction="left" data-offset="50">
+        {{-- <li data-ns-animate="" data-delay="0.5" data-direction="left" data-offset="50">
             <a href="#"
             class="btn btn-white max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent">
             <span>Free trial</span>
             </a>
-        </li>
+        </li> --}}
         </ul>
     </div>
     </div>

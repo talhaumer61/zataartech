@@ -1,13 +1,17 @@
 <section class="pt-7 pb-14 md:pb-16 lg:pb-20 xl:pb-[100px]" aria-label="Contact Information and Form">
+  @if(session('success'))
+    <div class="p-4 mb-4 text-green-700 bg-green-100 rounded-lg dark:bg-green-900 dark:text-green-200">
+        {{ session('success') }}
+    </div>
+@endif
+
   <div class="main-container">
     <div class="space-y-[70px]">
       <!-- heading  -->
       <div class="max-w-[680px] mx-auto text-center space-y-3">
-        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Reach out to our support team for help.</h2>
+        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading }}</h2>
         <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          Whether you have a question, need technical assistance, or just want some guidance, our
-          support team is here to help. We're available around the clock to provide quick and
-          friendly support.
+          {{ $contact->description }}
         </p>
       </div>
 
@@ -26,7 +30,7 @@
 
             <div class="space-y-2.5">
               <p class="text-heading-6 text-accent">Our Address</p>
-              <p class="text-accent/60">2464 Royal Ln. Mesa, New Jersey 45463</p>
+              <p class="text-accent/60">{{ $contact->address1 }}</p>
             </div>
           </div>
 
@@ -45,7 +49,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Email Us</p>
                 <p class="text-accent/60">
-                  <a href="mailto:hello@Zataar Tech.com">hello@Zataar Tech.com</a>
+                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email1 }}</a>
                 </p>
               </div>
             </div>
@@ -66,7 +70,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Call Us</p>
                 <p class="text-accent/60">
-                  <a href="tel:+391035256845933">+391 (0)35 2568 4593</a>
+                  <a href="tel:+391035256845933">{{ $contact->phone1 }}</a>
                 </p>
               </div>
             </div>
@@ -75,7 +79,8 @@
 
         <!-- contact form  -->
         <div data-ns-animate="" data-delay="0.3" class="max-w-[847px] w-full mx-auto bg-white dark:bg-background-6 rounded-4xl p-6 md:p-8 lg:p-11" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          <form action="/" method="POST" class="space-y-8">
+          <<form action="{{ route('contact.store') }}" method="POST" class="space-y-8" id="contactForm">
+            @csrf
             <!-- name and phone number  -->
             <div class="flex items-center flex-col md:flex-row gap-8 justify-between">
               <!--  name -->
