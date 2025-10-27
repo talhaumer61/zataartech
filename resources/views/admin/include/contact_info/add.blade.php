@@ -52,7 +52,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold">Phone 2</label>
+                            <label class="form-label fw-semibold">Whatsapp</label>
                             <input type="text" name="phone2" class="form-control" 
                                 value="{{ old('phone2', $contact->phone2 ?? '') }}">
                         </div>

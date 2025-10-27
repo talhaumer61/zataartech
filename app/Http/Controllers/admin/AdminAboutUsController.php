@@ -28,8 +28,6 @@ class AdminAboutUsController extends Controller
             'mission' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
-            'ceo_message' => 'nullable|string',
-            'ceo_photo' => 'nullable|image|mimes:jpg,jpeg,png,svg|max:2048',
             'status' => 'required|boolean',
         ]);
 
@@ -45,9 +43,7 @@ class AdminAboutUsController extends Controller
             'about_us' => $request->about_us,
             'mission' => $request->mission,
             'vision' => $request->vision,
-            'detail' => $request->detail,
-            'ceo_photo' => $photoPath,
-            'ceo_message' => $request->ceo_message,
+            'detail' => $request->detail
         ]);
 
         sessionMsg('Success', 'About Us added successfully!', 'success');
@@ -63,8 +59,6 @@ class AdminAboutUsController extends Controller
             'mission' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
-            'ceo_message' => 'nullable|string',
-            'ceo_photo' => 'nullable|image|mimes:jpg,jpeg,png,svg|max:2048',
             'status' => 'required|boolean',
         ]);
 
@@ -83,9 +77,7 @@ class AdminAboutUsController extends Controller
             'about_us' => $request->about_us,
             'mission' => $request->mission,
             'vision' => $request->vision,
-            'detail' => $request->detail,
-            'ceo_photo' => $photoPath,
-            'ceo_message' => $request->ceo_message,
+            'detail' => $request->detail
         ]);
 
         sessionMsg('Updated', 'About Us updated successfully!', 'success');

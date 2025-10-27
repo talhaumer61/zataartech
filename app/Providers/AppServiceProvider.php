@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\ContactInfo;
 use App\Models\Service;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -24,6 +25,15 @@ class AppServiceProvider extends ServiceProvider
         // Share active services globally to all views (e.g. navbar)
         $services = Service::where('status', 1)->orderBy('id')->get();
 
-        View::share('global_services', $services);
+        // Share first active contact info globally
+        $contact = ContactInfo::where('status', 1)
+            ->orderBy('id', 'asc')
+            ->first();
+
+        // Share both globally
+        View::share([
+            'global_services' => $services,
+            'contact_info'  => $contact,
+        ]);
     }
 }

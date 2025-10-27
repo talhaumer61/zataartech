@@ -64,7 +64,7 @@
                                 <td>{{ $contactRecord->phone1 }}</td>
                             </tr>
                             <tr>
-                                <th>Phone 2</th>
+                                <th>Whatsapp</th>
                                 <td>{{ $contactRecord->phone2 }}</td>
                             </tr>
                             <tr>

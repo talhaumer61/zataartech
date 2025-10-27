@@ -1,3 +1,29 @@
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+.whatsapp-float:hover {
+  background-color: #1ebd5a;
+  transform: scale(1.1);
+}
+.whatsapp-float i {
+  vertical-align: middle;
+}
+</style>
+
 <footer class="footer footer-three bg-white dark:bg-background-8 dark:bg-background-6 relative overflow-hidden">
   <div class="main-container">
     <!-- footer bg-img  -->
@@ -160,6 +186,12 @@
         </svg>
       </span>
     </button> --}}
+  <a href="https://wa.me/{{ $contact_info->phone2}}" 
+    target="_blank" 
+    class="whatsapp-float" 
+    aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
   <script src="{{asset('vendor/swiper.min.js')}}"></script>
   <script src="{{asset('vendor/leaflet.min.js')}}"></script>

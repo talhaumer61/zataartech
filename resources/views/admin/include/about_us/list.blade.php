@@ -78,7 +78,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-8 mb-4">
+                            {{-- <div class="col-md-8 mb-4">
                                 <h5 class="fw-bold mb-2">CEO Message</h5>
                                 <div class="p-3 bg-dark rounded shadow-sm border">
                                     {!! $aboutRecord->ceo_message !!}
@@ -90,7 +90,7 @@
                                     <h5 class="fw-bold mb-3">CEO Photo</h5>
                                     <img src="{{ asset($aboutRecord->ceo_photo) }}" class="rounded shadow-sm border" width="150" alt="CEO Photo">
                                 </div>
-                            @endif
+                            @endif --}}
                         </div>
                     </div>
                 @else

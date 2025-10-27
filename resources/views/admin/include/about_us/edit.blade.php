@@ -44,7 +44,7 @@
                             <textarea name="detail" id="ckeditor" class="form-control">{{ old('detail', $about->detail ?? '') }}</textarea>
                         </div>
 
-                        <div class="col-md-12">
+                        {{-- <div class="col-md-12">
                             <label class="form-label fw-semibold">CEO Message</label>
                             <textarea name="ceo_message" class="form-control" id="ckeditor">{{ old('ceo_message', $about->ceo_message ?? '') }}</textarea>
                         </div>
@@ -55,9 +55,9 @@
                             @if(isset($about) && $about->ceo_photo)
                                 <img src="{{ asset($about->ceo_photo) }}" width="100" class="mt-2 rounded shadow-sm border">
                             @endif
-                        </div>
+                        </div> --}}
 
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <label class="form-label fw-semibold">Status</label>
                             <select name="status" class="form-select">
                                 <option value="1" {{ old('status', $about->status ?? '') == 1 ? 'selected' : '' }}>Active</option>

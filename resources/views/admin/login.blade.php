@@ -95,5 +95,25 @@
       <!-- Theme js-->
       <script src="{{asset('admin/js/script.js')}}"></script>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const showHide = document.querySelector('.show-hide');
+          const input = showHide?.previousElementSibling;
+
+          if (showHide && input) {
+            showHide.addEventListener('click', function() {
+              if (input.type === 'password') {
+                input.type = 'text';
+                // this.querySelector('span').textContent = 'Hide';
+              } else {
+                input.type = 'password';
+                // this.querySelector('span').textContent = 'Show';
+              }
+            });
+          }
+        });
+    </script>
+
   </body>
 </html>
