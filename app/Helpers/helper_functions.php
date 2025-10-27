@@ -161,3 +161,19 @@ function sendEmail($recipientEmail, $subject, $htmlContent) {
         return false; // Email sending failed
     }
 }
+
+function upload_path($subfolder = '') {
+    if (app()->environment('local')) {
+        $base = public_path('uploads');
+    } else {
+        $base = base_path('../uploads');
+    }
+
+    $path = rtrim($base . '/' . $subfolder, '/');
+
+    if (!file_exists($path)) {
+        mkdir($path, 0775, true);
+    }
+
+    return $path;
+}

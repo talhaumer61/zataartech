@@ -43,13 +43,13 @@ class AdminServicesController extends Controller
         $iconPath = null;
         if ($request->hasFile('photo')) {
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/services'), $photoName);
+            $request->file('photo')->move(upload_path('services'), $photoName);
             $photoPath = 'uploads/services/' . $photoName;
         }
         
         if ($request->hasFile('icon')) {
             $photoName = time() . '_' . $request->file('icon')->getClientOriginalName();
-            $request->file('icon')->move(public_path('uploads/services/icons'), $photoName);
+            $request->file('icon')->move(upload_path('services/icons'), $photoName);
             $iconPath = 'uploads/services/icons/' . $photoName;
         }
 
@@ -94,7 +94,7 @@ class AdminServicesController extends Controller
                 unlink(public_path($photoPath));
             }
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/services'), $photoName);
+            $request->file('photo')->move(upload_path('services'), $photoName);
             $photoPath = 'uploads/services/' . $photoName;
         }
         
@@ -105,7 +105,7 @@ class AdminServicesController extends Controller
                 unlink(public_path($iconPath));
             }
             $photoName = time() . '_' . $request->file('icon')->getClientOriginalName();
-            $request->file('icon')->move(public_path('uploads/services/icons'), $photoName);
+            $request->file('icon')->move(upload_path('services/icons'), $photoName);
             $iconPath = 'uploads/services/icons/' . $photoName;
         }
 

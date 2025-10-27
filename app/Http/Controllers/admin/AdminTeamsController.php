@@ -42,7 +42,7 @@ class AdminTeamsController extends Controller
         $photoPath = null;
         if ($request->hasFile('photo')) {
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/team'), $photoName);
+            $request->file('photo')->move(upload_path('team'), $photoName);
             $photoPath = 'uploads/team/' . $photoName;
         }
 
@@ -89,7 +89,7 @@ class AdminTeamsController extends Controller
                 unlink(public_path($photoPath));
             }
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/team'), $photoName);
+            $request->file('photo')->move(upload_path('team'), $photoName);
             $photoPath = 'uploads/team/' . $photoName;
         }
 

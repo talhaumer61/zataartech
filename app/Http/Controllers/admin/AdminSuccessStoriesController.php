@@ -40,7 +40,7 @@ class AdminSuccessStoriesController extends Controller
         $photoPath = null;
         if ($request->hasFile('photo')) {
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/success_stories'), $photoName);
+            $request->file('photo')->move(upload_path('success_stories'), $photoName);
             $photoPath = 'uploads/success_stories/' . $photoName;
         }
 
@@ -81,7 +81,7 @@ class AdminSuccessStoriesController extends Controller
                 unlink(public_path($photoPath));
             }
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/success_stories'), $photoName);
+            $request->file('photo')->move(upload_path('success_stories'), $photoName);
             $photoPath = 'uploads/success_stories/' . $photoName;
         }
 

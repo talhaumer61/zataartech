@@ -39,7 +39,7 @@ class AdminTestimonialsController extends Controller
         $photoPath = null;
         if ($request->hasFile('photo')) {
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/testimonials'), $photoName);
+            $request->file('photo')->move(upload_path('testimonials'), $photoName);
             $photoPath = 'uploads/testimonials/' . $photoName;
         }
 
@@ -75,7 +75,7 @@ class AdminTestimonialsController extends Controller
                 unlink(public_path($photoPath));
             }
             $photoName = time() . '_' . $request->file('photo')->getClientOriginalName();
-            $request->file('photo')->move(public_path('uploads/testimonials'), $photoName);
+            $request->file('photo')->move(upload_path('testimonials'), $photoName);
             $photoPath = 'uploads/testimonials/' . $photoName;
         }
 

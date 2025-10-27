@@ -34,7 +34,7 @@ class AdminAboutUsController extends Controller
         $photoPath = null;
         if ($request->hasFile('ceo_photo')) {
             $photoName = time() . '_' . $request->file('ceo_photo')->getClientOriginalName();
-            $request->file('ceo_photo')->move(public_path('uploads/aboutus'), $photoName);
+            $request->file('ceo_photo')->move(upload_path('aboutus'), $photoName);
             $photoPath = 'uploads/aboutus/' . $photoName;
         }
 
@@ -68,7 +68,7 @@ class AdminAboutUsController extends Controller
                 unlink(public_path($photoPath));
             }
             $photoName = time() . '_' . $request->file('ceo_photo')->getClientOriginalName();
-            $request->file('ceo_photo')->move(public_path('uploads/aboutus'), $photoName);
+            $request->file('ceo_photo')->move(upload_path('aboutus'), $photoName);
             $photoPath = 'uploads/aboutus/' . $photoName;
         }
 
