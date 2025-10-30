@@ -16,6 +16,7 @@ class AboutUs extends Model
         'status',
         'about_us',
         'mission',
+        'heading',
         'vision',
         'detail',
         'ceo_photo',

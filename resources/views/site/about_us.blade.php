@@ -6,7 +6,9 @@
         @include ('site.about.breadcrumb')
         @include ('site.about.mission')
         @include ('site.about.counters')
-        @include ('site.about.team')
+        @if ($teams->count() > 0)
+            @include ('site.about.team')
+        @endif
         @include ('site.about.cta')
         @include ('site.about.map')
     @include ('site.footer')

@@ -10,6 +10,7 @@ use App\Http\Controllers\admin\AdminTeamsController;
 use App\Http\Controllers\admin\AdminTestimonialsController;
 use App\Http\Controllers\admin\AdminAuthController;
 use App\Http\Controllers\admin\AdminContactQueryController;
+use App\Http\Controllers\admin\AdminProfileController;
 use App\Http\Controllers\site\AboutUsController;
 use App\Http\Controllers\site\SuccessStoriesController;
 use App\Http\Controllers\site\ContactUsController;
@@ -78,4 +79,7 @@ Route::middleware([AdminAuth::class])->group(function () {
     // ✅ Contact Queries
     Route::get('/portal/contact-queries', [AdminContactQueryController::class, 'index'])->name('contact.queries');
     Route::delete('/portal/contact-queries/{id}', [AdminContactQueryController::class, 'destroy'])->name('contact.queries.delete');
+
+    Route::get('/my-profile', [AdminProfileController::class, 'index'])->name('admin.profile');
+    Route::put('/admin/profile', [AdminProfileController::class, 'update'])->name('admin.profile.update');
 });

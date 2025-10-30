@@ -273,18 +273,39 @@
                     </div>
                     </div>
                 </li> --}}
-                <li class="profile-nav onhover-dropdown"> 
-                    <div class="media profile-media"><img class="b-r-10" src="{{asset('admin/images/dashboard/profile.png')}}" alt="">
-                    <div class="media-body d-xxl-block d-none box-col-none">
-                        <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span><i class="middle fa fa-angle-down"> </i></div>
-                        <p class="mb-0 font-roboto">Admin</p>
+                <li class="profile-nav onhover-dropdown">
+                    @php
+                        $admin = Auth::user();
+                        $photo = $admin && $admin->photo
+                                    ? asset($admin->photo)
+                                    : asset('admin/images/dashboard/profile.png');
+                    @endphp
+
+                    <div class="media profile-media">
+                        <img class="b-r-10" src="{{ $photo }}" alt="Admin Photo">
+                        <div class="media-body d-xxl-block d-none box-col-none">
+                            <div class="d-flex align-items-center gap-2">
+                                <span>{{ $admin->name ?? 'Admin' }}</span>
+                                <i class="middle fa fa-angle-down"></i>
+                            </div>
+                            <p class="mb-0 font-roboto text-capitalize">{{ $admin->role ?? 'admin' }}</p>
+                        </div>
                     </div>
-                    </div>
+
                     <ul class="profile-dropdown onhover-show-div">
-                    <li><a href="#"><i data-feather="user"></i><span>My Profile</span></a></li>
-                    <li><a class="btn btn-pill btn-outline-primary btn-sm" href="/admin/logout">Log Out</a></li>
+                        <li>
+                            <a href="{{ route('admin.profile') }}">
+                                <i data-feather="user"></i><span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-pill btn-outline-primary btn-sm" href="{{ route('admin.logout') }}">
+                                Log Out
+                            </a>
+                        </li>
                     </ul>
                 </li>
+
                 </ul>
             </div>
             <script class="result-template" type="text/x-handlebars-template">

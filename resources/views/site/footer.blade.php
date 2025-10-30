@@ -57,17 +57,19 @@
           </figure>
 
           <p class="mt-4 mb-7 text-secondary dark:text-accent">
-            Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.
+            We aim to shape the future by combining human creativity with intelligent technology to make life simpler, smarter, and more connected.
           </p>
           <div class="flex items-center gap-3">
-            <a href="#" class="footer-social-link">
+            <a href="{{ $contact_info->facebook ?? '#' }}" target="_blank" class="footer-social-link">
               <span class="sr-only">Facebook</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="7" height="16" viewBox="0 0 7 16" fill="none">
                 <path d="M2.25 15C2.25 15.4142 2.58579 15.75 3 15.75C3.41421 15.75 3.75 15.4142 3.75 15H2.25ZM3.75 7C3.75 6.58579 3.41421 6.25 3 6.25C2.58579 6.25 2.25 6.58579 2.25 7H3.75ZM6 1.75C6.41421 1.75 6.75 1.41421 6.75 1C6.75 0.585786 6.41421 0.25 6 0.25V1.75ZM3 4H2.25H3ZM2.25 7C2.25 7.41421 2.58579 7.75 3 7.75C3.41421 7.75 3.75 7.41421 3.75 7H2.25ZM3 6.25C2.58579 6.25 2.25 6.58579 2.25 7C2.25 7.41421 2.58579 7.75 3 7.75V6.25ZM5 7.75C5.41421 7.75 5.75 7.41421 5.75 7C5.75 6.58579 5.41421 6.25 5 6.25V7.75ZM3 7.75C3.41421 7.75 3.75 7.41421 3.75 7C3.75 6.58579 3.41421 6.25 3 6.25V7.75ZM1 6.25C0.585786 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585786 7.75 1 7.75V6.25ZM3 15H3.75V7H3H2.25V15H3ZM6 1V0.25C3.92893 0.25 2.25 1.92893 2.25 4H3H3.75C3.75 2.75736 4.75736 1.75 6 1.75V1ZM3 4H2.25V7H3H3.75V4H3ZM3 7V7.75H5V7V6.25H3V7ZM3 7V6.25H1V7V7.75H3V7Z" class="fill-secondary dark:fill-accent"></path>
               </svg>
             </a>
+
             <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
-            <a href="#" class="footer-social-link">
+
+            <a href="{{ $contact_info->instagram ?? '#' }}" target="_blank" class="footer-social-link">
               <span class="sr-only">Instagram</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11 1H5C2.79086 1 1 2.79086 1 5V11C1 13.2091 2.79086 15 5 15H11C13.2091 15 15 13.2091 15 11V5C15 2.79086 13.2091 1 11 1Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -76,23 +78,28 @@
                 <rect x="11.5" y="4.5" width="1" height="1" rx="0.5" transform="rotate(-90 11.5 4.5)" class="stroke-secondary dark:stroke-accent" stroke-linecap="round"></rect>
               </svg>
             </a>
+
             <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
-            <a href="#" class="footer-social-link">
-              <span class="sr-only">Youtube</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.668 15.0028C18.9724 15.0867 20.91 13.29 21 10.9858V5.01982C20.91 2.71569 18.9724 0.918929 16.668 1.00282H5.332C3.02763 0.918929 1.08998 2.71569 1 5.01982V10.9858C1.08998 13.29 3.02763 15.0867 5.332 15.0028H16.668Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.508 5.17711L13.669 7.32511C13.8738 7.44468 13.9997 7.66398 13.9997 7.90111C13.9997 8.13824 13.8738 8.35754 13.669 8.47711L10.508 10.8271C9.908 11.2341 9 10.8871 9 10.2511V5.75111C9 5.11811 9.909 4.77011 10.508 5.17711Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </a>
-            <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
-            <a href="#" class="footer-social-link">
+
+            <a href="{{ $contact_info->linkedin ?? '#' }}" target="_blank" class="footer-social-link">
               <span class="sr-only">LinkedIn</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11" fill="none">
                 <path d="M2.25 4C2.25 3.58579 1.91421 3.25 1.5 3.25C1.08579 3.25 0.75 3.58579 0.75 4H2.25ZM0.75 10C0.75 10.4142 1.08579 10.75 1.5 10.75C1.91421 10.75 2.25 10.4142 2.25 10H0.75ZM10.75 10C10.75 10.4142 11.0858 10.75 11.5 10.75C11.9142 10.75 12.25 10.4142 12.25 10H10.75ZM5.5 7H4.75H5.5ZM4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75C5.91421 10.75 6.25 10.4142 6.25 10H4.75ZM2.25 1C2.25 0.585786 1.91421 0.25 1.5 0.25C1.08579 0.25 0.75 0.585786 0.75 1H2.25ZM0.75 2C0.75 2.41421 1.08579 2.75 1.5 2.75C1.91421 2.75 2.25 2.41421 2.25 2H0.75ZM1.5 4H0.75V10H1.5H2.25V4H1.5ZM11.5 10H12.25V7H11.5H10.75V10H11.5ZM11.5 7H12.25C12.25 4.92893 10.5711 3.25 8.5 3.25V4V4.75C9.74264 4.75 10.75 5.75736 10.75 7H11.5ZM8.5 4V3.25C6.42893 3.25 4.75 4.92893 4.75 7H5.5H6.25C6.25 5.75736 7.25736 4.75 8.5 4.75V4ZM5.5 7H4.75V10H5.5H6.25V7H5.5ZM1.5 1H0.75V2H1.5H2.25V1H1.5Z" class="fill-secondary dark:fill-accent"></path>
               </svg>
             </a>
+
             <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
-            <a href="#" class="footer-social-link">
+
+            <a href="{{ $contact_info->youtube ?? '#' }}" target="_blank" class="footer-social-link">
+              <span class="sr-only">YouTube</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.668 15.0028C18.9724 15.0867 20.91 13.29 21 10.9858V5.01982C20.91 2.71569 18.9724 0.918929 16.668 1.00282H5.332C3.02763 0.918929 1.08998 2.71569 1 5.01982V10.9858C1.08998 13.29 3.02763 15.0867 5.332 15.0028H16.668Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.508 5.17711L13.669 7.32511C13.8738 7.44468 13.9997 7.66398 13.9997 7.90111C13.9997 8.13824 13.8738 8.35754 13.669 8.47711L10.508 10.8271C9.908 11.2341 9 10.8871 9 10.2511V5.75111C9 5.11811 9.909 4.77011 10.508 5.17711Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+
+            <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
+            {{-- <a href="#" class="footer-social-link">
               <span class="sr-only">Dribbble</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.81146 14.7617C6.69789 15.5957 3.41731 14.1957 1.86521 11.3707C0.313116 8.54567 0.890795 5.02595 3.26447 2.84524C5.63814 0.66452 9.19411 0.386619 11.8777 2.1721C14.5614 3.95759 15.6788 7.34483 14.5845 10.3767C13.8079 12.532 12.0248 14.1702 9.81146 14.7617Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -107,7 +114,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10H15Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M1 6.25C0.585786 6.25 0.25 6.58579 0.25 7C0.25 7.41421 0.585786 7.75 1 7.75V6.25ZM4 7.75C4.41421 7.75 4.75 7.41421 4.75 7C4.75 6.58579 4.41421 6.25 4 6.25V7.75ZM9.75 9.99998C9.74999 9.58577 9.41419 9.24999 8.99998 9.25C8.58577 9.25001 8.24999 9.58581 8.25 10L9.75 9.99998ZM10.9295 12.8024L10.6619 13.5031L10.9295 12.8024ZM14.795 12.5C15.0712 12.1913 15.0447 11.7172 14.736 11.441C14.4273 11.1648 13.9532 11.1913 13.677 11.5L14.795 12.5ZM14 5.75C14.4142 5.75 14.75 5.41421 14.75 5C14.75 4.58579 14.4142 4.25 14 4.25V5.75ZM10 4.25C9.58579 4.25 9.25 4.58579 9.25 5C9.25 5.41421 9.58579 5.75 10 5.75V4.25ZM1 7V7.75H4V7V6.25H1V7ZM9 10L8.25 10C8.25004 11.5548 9.20948 12.9483 10.6619 13.5031L10.9295 12.8024L11.1971 12.1018C10.3257 11.7689 9.75002 10.9328 9.75 9.99998L9 10ZM10.9295 12.8024L10.6619 13.5031C12.1143 14.0578 13.7584 13.6588 14.795 12.5L14.236 12L13.677 11.5C13.0551 12.1953 12.0686 12.4347 11.1971 12.1018L10.9295 12.8024ZM14 5V4.25H10V5V5.75H14V5Z" class="fill-secondary dark:fill-accent"></path>
               </svg>
-            </a>
+            </a> --}}
           </div>
         </div>
       </div>
@@ -186,12 +193,20 @@
         </svg>
       </span>
     </button> --}}
-  <a href="https://wa.me/{{ $contact_info->phone2}}" 
-    target="_blank" 
-    class="whatsapp-float" 
-    aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    @if (!empty($contact_info->phone2))
+        <a href="https://wa.me/{{ $contact_info->phone2 }}" 
+          target="_blank" 
+          class="whatsapp-float" 
+          aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    @else
+        <a href="#" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    @endif
+
+
 
   <script src="{{asset('vendor/swiper.min.js')}}"></script>
   <script src="{{asset('vendor/leaflet.min.js')}}"></script>

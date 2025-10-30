@@ -75,6 +75,60 @@
                                 <th>Email 2</th>
                                 <td>{{ $contactRecord->email2 }}</td>
                             </tr>
+
+                            <!-- 🌐 Social Media Links -->
+                            <tr>
+                                <th>Facebook</th>
+                                <td>
+                                    @if(!empty($contactRecord->facebook))
+                                        <a href="{{ $contactRecord->facebook }}" target="_blank" class="text-primary">
+                                            <i class="fab fa-facebook me-1"></i> {{ $contactRecord->facebook }}
+                                        </a>
+                                    @else
+                                        <span class="text-muted">Not Provided</span>
+                                    @endif
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Instagram</th>
+                                <td>
+                                    @if(!empty($contactRecord->instagram))
+                                        <a href="{{ $contactRecord->instagram }}" target="_blank" class="text-danger">
+                                            <i class="fab fa-instagram me-1"></i> {{ $contactRecord->instagram }}
+                                        </a>
+                                    @else
+                                        <span class="text-muted">Not Provided</span>
+                                    @endif
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>LinkedIn</th>
+                                <td>
+                                    @if(!empty($contactRecord->linkedin))
+                                        <a href="{{ $contactRecord->linkedin }}" target="_blank" class="text-info">
+                                            <i class="fab fa-linkedin me-1"></i> {{ $contactRecord->linkedin }}
+                                        </a>
+                                    @else
+                                        <span class="text-muted">Not Provided</span>
+                                    @endif
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>YouTube</th>
+                                <td>
+                                    @if(!empty($contactRecord->youtube))
+                                        <a href="{{ $contactRecord->youtube }}" target="_blank" class="text-danger">
+                                            <i class="fab fa-youtube me-1"></i> {{ $contactRecord->youtube }}
+                                        </a>
+                                    @else
+                                        <span class="text-muted">Not Provided</span>
+                                    @endif
+                                </td>
+                            </tr>
+
                             <tr>
                                 <th>Status</th>
                                 <td>

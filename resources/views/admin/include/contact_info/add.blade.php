@@ -68,6 +68,35 @@
                             <input type="email" name="email2" class="form-control" 
                                 value="{{ old('email2', $contact->email2 ?? '') }}">
                         </div>
+
+                        <!-- 🌐 Social Media Links -->
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Facebook URL</label>
+                            <input type="url" name="facebook" class="form-control"
+                                placeholder="https://facebook.com/yourpage"
+                                value="{{ old('facebook', $contact->facebook ?? '') }}">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Instagram URL</label>
+                            <input type="url" name="instagram" class="form-control"
+                                placeholder="https://instagram.com/yourprofile"
+                                value="{{ old('instagram', $contact->instagram ?? '') }}">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">LinkedIn URL</label>
+                            <input type="url" name="linkedin" class="form-control"
+                                placeholder="https://linkedin.com/in/yourprofile"
+                                value="{{ old('linkedin', $contact->linkedin ?? '') }}">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">YouTube URL</label>
+                            <input type="url" name="youtube" class="form-control"
+                                placeholder="https://youtube.com/@yourchannel"
+                                value="{{ old('youtube', $contact->youtube ?? '') }}">
+                        </div>
                     </div>
 
                     <div class="mt-4 text-end">

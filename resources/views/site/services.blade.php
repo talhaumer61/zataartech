@@ -1,5 +1,5 @@
     @php
-        $pageTitle = "Services";
+        $pageTitle = $href ? $service->title : 'Services';
     @endphp
     @include ('site.header')
     @include ('site.navbar')

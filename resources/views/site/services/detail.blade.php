@@ -46,35 +46,37 @@
           </p>
 
         </div>
-        <div class="mt-[70px] space-y-14" id="live-data-insights">
-          <div class="space-y-3">
-            <h4 data-ns-animate="" data-delay="0.1" class="text-heading-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">What our users say</h4>
-            <p data-ns-animate="" data-delay="0.2" class="text-tagline-1" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-              “Zataar Tech delivered our entire platform ahead of schedule—flawless execution and real
-              partnership.”
-            </p>
-          </div>
-          <div data-ns-animate="" data-delay="0.1" class="bg-secondary p-8 rounded-[20px] space-y-6" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-            <figure class="size-16 rounded-full overflow-hidden bg-linear-[180deg,#ffffff_0%,#83e7ee_100%]">
-              <img class="size-full object-cover" src="{{ asset( $testimonial->photo ) }}" alt="avatar">
-            </figure>
-            <blockquote>
-              <p data-ns-animate="" data-delay="0.3" class="text-white" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-                ““{{ strip_tags($testimonial->review) }}””
+        @if($testimonial)
+          <div class="mt-[70px] space-y-14" id="live-data-insights">
+            <div class="space-y-3">
+              <h4 data-ns-animate="" data-delay="0.1" class="text-heading-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">What our users say</h4>
+              <p data-ns-animate="" data-delay="0.2" class="text-tagline-1" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                “Zataar Tech delivered our entire platform ahead of schedule—flawless execution and real
+                partnership.”
               </p>
-            </blockquote>
-            <div>
-              <p data-ns-animate="" data-delay="0.4" class="text-lg font-medium text-white" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-                {{ $testimonial->client_name }}
-              </p>
-              @if($testimonial->designation)
-                <p data-ns-animate="" data-delay="0.5" class="text-tagline-2 font-normal text-accent/60" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-                  {{ $testimonial->designation }}
+            </div>
+            <div data-ns-animate="" data-delay="0.1" class="bg-secondary p-8 rounded-[20px] space-y-6" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+              <figure class="size-16 rounded-full overflow-hidden bg-linear-[180deg,#ffffff_0%,#83e7ee_100%]">
+                <img class="size-full object-cover" src="{{ asset( $testimonial->photo ) }}" alt="avatar">
+              </figure>
+              <blockquote>
+                <p data-ns-animate="" data-delay="0.3" class="text-white" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                  ““{{ strip_tags($testimonial->review) }}””
                 </p>
-              @endif
+              </blockquote>
+              <div>
+                <p data-ns-animate="" data-delay="0.4" class="text-lg font-medium text-white" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                  {{ $testimonial->client_name }}
+                </p>
+                @if($testimonial->designation)
+                  <p data-ns-animate="" data-delay="0.5" class="text-tagline-2 font-normal text-accent/60" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                    {{ $testimonial->designation }}
+                  </p>
+                @endif
+              </div>
             </div>
           </div>
-        </div>
+        @endif
       </div>
       <!-- Table of Contents -->
       @if($otherServices->count() > 0)

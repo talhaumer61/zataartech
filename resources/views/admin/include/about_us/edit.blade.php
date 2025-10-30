@@ -25,6 +25,16 @@
 
                     <div class="row g-4">
                         <div class="col-md-12">
+                            <label class="form-label fw-semibold">Heading</label>
+                            <input 
+                                type="text" 
+                                name="heading" 
+                                class="form-control" 
+                                value="{{ old('heading', $about->heading ?? '') }}" 
+                                placeholder="Enter About Us heading">
+                        </div>
+
+                        <div class="col-md-12">
                             <label class="form-label fw-semibold">About Us</label>
                             <textarea name="about_us" class="form-control" id="ckeditor">{{ old('about_us', $about->about_us ?? '') }}</textarea>
                         </div>

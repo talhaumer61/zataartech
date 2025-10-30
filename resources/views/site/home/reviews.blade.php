@@ -13,7 +13,8 @@
         <div class="swiper-wrapper">
           @foreach($testimonials as $testimonial)
             <div class="swiper-slide">
-              <div class="bg-background-2 dark:bg-background-5 rounded-[20px] relative overflow-hidden p-8 flex flex-col gap-y-8 z-0 mx-1 sm:mx-0">
+              <div class="bg-background-2 dark:bg-background-5 rounded-[20px] relative overflow-hidden p-8 flex flex-col gap-y-8 z-0 mx-1 sm:mx-0 border" style="border:1.5px solid #149bff;">
+
                 
                 <!-- Gradient overlay -->
                 <div class="absolute w-full h-full -z-10 opacity-0 transition-opacity duration-300 gradient-overlay">

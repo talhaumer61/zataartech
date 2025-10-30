@@ -26,6 +26,6 @@ class ContactUsController extends Controller
 
         ContactQuery::create($request->all());
 
-        return redirect()->route('home')->with('success', 'Your message has been sent successfully!');
+        return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }
 }

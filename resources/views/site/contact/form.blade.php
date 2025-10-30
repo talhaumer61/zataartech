@@ -1,17 +1,80 @@
+<style>
+/* Toast base */
+.toast {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #149bff;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: toastIn 0.4s ease-out forwards, toastOut 0.4s ease-in 4s forwards;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+/* Toast icon */
+.toast-icon {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Toast content */
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Toast animations */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toastOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+</style>
+
 <section class="pt-7 pb-14 md:pb-16 lg:pb-20 xl:pb-[100px]" aria-label="Contact Information and Form">
-  @if(session('success'))
-    <div class="p-4 mb-4 text-green-700 bg-green-100 rounded-lg dark:bg-green-900 dark:text-green-200">
-        {{ session('success') }}
+  @if (session('success'))
+    <div id="toast-success" class="toast">
+      <div class="toast-content">
+        <span class="toast-icon">✔</span>
+        <span class="toast-message">{{ session('success') }}</span>
+      </div>
     </div>
-@endif
+  @endif
+
 
   <div class="main-container">
     <div class="space-y-[70px]">
       <!-- heading  -->
       <div class="max-w-[680px] mx-auto text-center space-y-3">
-        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading }}</h2>
+        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading ?? "Get in Touch With Us" }}</h2>
         <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          {{ $contact->description }}
+          {{ $contact->description ?? "We are always here to help you with any queries, feedback, or collaboration ideas. Feel free to reach out through phone, email, or visit our office during working hours." }}
         </p>
       </div>
 
@@ -30,7 +93,7 @@
 
             <div class="space-y-2.5">
               <p class="text-heading-6 text-accent">Our Address</p>
-              <p class="text-accent/60">{{ $contact->address1 }}</p>
+              <p class="text-accent/60">{{ $contact->address1 ?? "2nd Floor, Innovation Hub, Lahore, Pakistan" }}</p>
             </div>
           </div>
 
@@ -49,7 +112,10 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Email Us</p>
                 <p class="text-accent/60">
-                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email1 }}</a>
+                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email1 ?? "info@zataartech.com" }}</a>
+                </p>
+                <p class="text-accent/60">
+                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email2 ?? "support@zataartech.com" }}</a>
                 </p>
               </div>
             </div>
@@ -70,7 +136,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Call Us</p>
                 <p class="text-accent/60">
-                  <a href="tel:+391035256845933">{{ $contact->phone1 }}</a>
+                  <a href="tel:+391035256845933">{{ $contact->phone1 ?? "+92 300 1234567" }}</a>
                 </p>
               </div>
             </div>
@@ -136,3 +202,14 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toast = document.getElementById('toast-success');
+    if (toast) {
+      setTimeout(() => {
+        toast.remove();
+      }, 4400); // Remove after animation
+    }
+  });
+</script>
