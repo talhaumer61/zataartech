@@ -10,6 +10,8 @@ use App\Http\Controllers\admin\AdminTeamsController;
 use App\Http\Controllers\admin\AdminTestimonialsController;
 use App\Http\Controllers\admin\AdminAuthController;
 use App\Http\Controllers\admin\AdminContactQueryController;
+use App\Http\Controllers\admin\AdminBannerController;
+use App\Http\Controllers\admin\AdminHomePageController;
 use App\Http\Controllers\admin\AdminProfileController;
 use App\Http\Controllers\site\AboutUsController;
 use App\Http\Controllers\site\SuccessStoriesController;
@@ -75,6 +77,19 @@ Route::middleware([AdminAuth::class])->group(function () {
     Route::post('/portal/contact-info/store', [AdminContactInfoController::class, 'store'])->name('admin.contactinfo.store');
     Route::post('/portal/contact-info/update/{id}', [AdminContactInfoController::class, 'update'])->name('admin.contactinfo.update');
     Route::delete('/portal/contact-info/delete/{id}', [AdminContactInfoController::class, 'destroy'])->name('admin.contactinfo.delete');
+
+    // ✅ Banner Module
+    Route::get('/portal/banner/{action?}/{id?}', [AdminBannerController::class, 'index'])->name('admin.banner');
+    Route::post('/portal/banner/store', [AdminBannerController::class, 'store'])->name('admin.banner.store');
+    Route::post('/portal/banner/update/{id}', [AdminBannerController::class, 'update'])->name('admin.banner.update');
+    Route::delete('/portal/banner/delete/{id}', [AdminBannerController::class, 'destroy'])->name('admin.banner.delete');
+
+    // ✅ Home Page Content Module
+    Route::get('/portal/homepage/{action?}/{id?}', [AdminHomePageController::class, 'index'])->name('admin.homepage');
+    Route::post('/portal/homepage/store', [AdminHomePageController::class, 'store'])->name('admin.homepage.store');
+    Route::put('/portal/homepage/update/{id}', [AdminHomePageController::class, 'update'])->name('admin.homepage.update');
+    // Route::delete('/portal/homepage/delete/{id}', [AdminHomePageController::class, 'destroy'])->name('admin.homepage.delete');
+
 
     // ✅ Contact Queries
     Route::get('/portal/contact-queries', [AdminContactQueryController::class, 'index'])->name('contact.queries');

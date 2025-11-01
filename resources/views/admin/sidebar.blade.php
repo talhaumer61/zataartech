@@ -96,7 +96,7 @@
               <svg class="fill-icon">
                 <use href="{{asset('admin/svg/icon-sprite.svg#stroke-user')}}"></use>
               </svg>
-              <span>Website Settings</span>
+              <span>Website Info</span>
               <div class="according-menu">
                 <i class="fa fa-angle-down"></i>
               </div>
@@ -105,6 +105,28 @@
               <li><a href="/portal/about-us">About Info</a></li>
               <li><a href="/portal/contact-info">Contact Info</a></li>
             </ul>
+        </li>
+        <li class="sidebar-list">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/banner">
+            <svg class="stroke-icon"> 
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-calendar')}}"></use>
+            </svg>
+            <svg class="fill-icon">
+              <use href="{{asset('admin/svg/icon-sprite.svg#fill-widget')}}"></use>
+            </svg>
+            <span>Banner</span>
+          </a>
+        </li>
+        <li class="sidebar-list">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/homepage">
+            <svg class="stroke-icon"> 
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-calendar')}}"></use>
+            </svg>
+            <svg class="fill-icon">
+              <use href="{{asset('admin/svg/icon-sprite.svg#fill-widget')}}"></use>
+            </svg>
+            <span>Home Page Content</span>
+          </a>
         </li>
       </ul>
       <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

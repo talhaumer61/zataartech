@@ -4,12 +4,11 @@
       <!-- heading  -->
       <div class="text-center">
         <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          Financial blog tips and tricks
+          {{ $home->success_stories_tag ?? "Success Stories"}}
         </span>
-        <h2 data-ns-animate="" data-delay="0.2" class="mb-3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Our recent news &amp; insights</h2>
+        <h2 data-ns-animate="" data-delay="0.2" class="mb-3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $home->success_stories_heading ?? "Our recent news & insights"}}</h2>
         <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          Our recent news &amp; insights highlight the latest developments and trends shaping our
-          industry.
+          {{ $home->success_stories_dec ?? "Our recent news & insights highlight our latest developments."}}
         </p>
       </div>
 

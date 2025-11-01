@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\ContactInfo;
+use App\Models\HomePage;
 use App\Models\Service;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -30,10 +31,16 @@ class AppServiceProvider extends ServiceProvider
             ->orderBy('id', 'asc')
             ->first();
 
+        
+        $home = HomePage::where('status', 1)
+            ->latest()
+            ->first();
+
         // Share both globally
         View::share([
             'global_services' => $services,
             'contact_info'  => $contact,
+            'home_info'  => $home,
         ]);
     }
 }

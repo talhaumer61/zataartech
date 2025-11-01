@@ -9,6 +9,6 @@
         @if ($teams->count() > 0)
             @include ('site.about.team')
         @endif
-        @include ('site.about.cta')
-        @include ('site.about.map')
+        {{-- @include ('site.about.cta') --}}
+        {{-- @include ('site.about.map') --}}
     @include ('site.footer')

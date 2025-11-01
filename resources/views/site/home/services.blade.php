@@ -3,14 +3,14 @@
     <!-- Service Header Section-->
     <div class="text-center mb-[70px] max-w-[880px] mx-auto">
       <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-        Our Services
+        {{$home->services_tag?? "Our Services"}}
       </span>
       <h2 data-ns-animate="" data-delay="0.2" class="mb-3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-        Leading companies around the globe rely on Zataar Tech.
+        {{$home->services_heading ?? "Leading companies around the globe rely on Zataar Tech."}}
       </h2>
       <p data-ns-animate="" data-delay="0.3" class="mb-14 lg:max-w-[600px] mx-auto" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-        Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's
-        not Latin, though it looks like it
+        {{$home->services_desc ?? "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's
+        not Latin, though it looks like it"}}
       </p>
       <div data-ns-animate="" data-delay="0.4" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
         <a href="/services" class="btn btn-primary hover:btn-secondary dark:hover:btn-white btn-md text-tagline-2 w-[90%] md:w-auto mx-auto md:mx-0">

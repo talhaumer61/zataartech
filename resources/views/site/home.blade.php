@@ -8,5 +8,5 @@
     @include ('site.home.why_us')
     @include ('site.home.stories')
     @include ('site.home.reviews')
-    @include ('site.home.cta')
+    {{-- @include ('site.home.cta') --}}
     @include ('site.footer')

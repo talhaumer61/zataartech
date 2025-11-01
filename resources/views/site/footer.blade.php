@@ -57,7 +57,7 @@
           </figure>
 
           <p class="mt-4 mb-7 text-secondary dark:text-accent">
-            We aim to shape the future by combining human creativity with intelligent technology to make life simpler, smarter, and more connected.
+            {{$home_info->footer_text ?? "We aim to shape the future by combining human creativity with intelligent technology to make life simpler, smarter, and more connected."}}
           </p>
           <div class="flex items-center gap-3">
             <a href="{{ $contact_info->facebook ?? '#' }}" target="_blank" class="footer-social-link">

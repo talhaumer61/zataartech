@@ -10,6 +10,6 @@
         @include ('site.services.breadcrumb')
         @include ('site.services.list')
         @include ('site.services.solutions')
-        @include ('site.services.cta')
+        {{-- @include ('site.services.cta') --}}
     @endif
     @include ('site.footer')

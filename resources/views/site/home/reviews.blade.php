@@ -1,10 +1,10 @@
 <section class="relative pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] dark:bg-background-6 pb-24 md:pb-36 lg:pb-44 xl:pb-[200px]">
   <div class="main-container flex flex-col gap-[70px] max-[426px]:gap-10">
     <div class="flex flex-col items-center text-center">
-      <span class="badge badge-yellow mb-5">Customer Success</span>
-      <h2 class="max-w-[750px] mx-auto mb-4">Real apps. Real results.</h2>
+      <span class="badge badge-yellow mb-5">{{$home->reviews_tag ?? "Customer Success"}}</span>
+      <h2 class="max-w-[750px] mx-auto mb-4">{{ $home->reviews_heading ?? "Real apps. Real results."}}</h2>
       <p class="max-w-[490px] max-[426px]:text-tagline-2 max-[426px]:max-w-[320px]">
-        Hear what our clients say about their experience working with Zataar Tech.
+        {{ $home->reviews_desc ?? "Hear what our clients say about their experience working with Zataar Tech."}}
       </p>
     </div>
 

@@ -59,7 +59,7 @@
                             
                             <div class="col-md-12 mb-4">
                                 <h5 class="fw-bold mb-2">About Us</h5>
-                                <div class="p-3 bg-dark rounded shadow-sm border">
+                                <div class="p-3 bg-dark rounded shadow-sm border" style="color: white">
                                     {!! $aboutRecord->about_us !!}
                                 </div>
                             </div>

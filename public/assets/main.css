@@ -27505,3 +27505,18 @@ pointer-events: auto;
 .use_cases_para > ul > li{
   color:white !important;
 }
+.section-content ul,
+.section-content li {
+  color: #fff !important;
+}
+
+.section-content ul {
+  list-style-type: disc !important;
+  margin-left: 2.5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.section-content li {
+  margin-bottom: 0.5rem !important;
+}

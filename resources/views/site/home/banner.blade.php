@@ -71,25 +71,25 @@
     <!-- Content -->
     <div class="main-container flex flex-col items-center text-center z-10">
         <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow mb-5">
-        Digital solutions
+            {{ $banner->tag ?? "Digital Solutions" }}
         </span>
-        <h1 data-ns-animate="" data-delay="0.2"
-        class="font-medium max-[426px]:mb-2.5 mb-4 max-[426px]:text-heading-5 max-sm:text-heading-4 max-sm:max-w-[450px]">
-        Effortlessly build advanced website
-        <br class="hidden md:block">
-        with Custom solutions
+        <h1 data-ns-animate data-delay="0.2"class="font-medium mb-4 max-[426px]:text-heading-5 max-sm:text-heading-4 max-sm:max-w-[450px] max-w-[700px] text-center mx-auto leading-tight">
+            {!! nl2br(e($banner->heading ?? 'Effortlessly build advanced website with Custom solutions')) !!}
         </h1>
+
         <p data-ns-animate="" data-delay="0.3" class="max-w-[625px] mb-10 sm:mb-14 max-sm:max-w-[420px]">
-        Effortlessly build advanced websites with AI-driven solutions that streamline every step of
-        the development process. From intelligent design suggestions to automated
+            {{$banner->desc ?? "Effortlessly build advanced websites with AI-driven solutions that streamline every step of
+            the development process. From intelligent design suggestions to automated"}}
         </p>
         <ul class="flex flex-col md:flex-row gap-4 mb-7 md:mb-14 max-md:w-full">
-        <li data-ns-animate="" data-delay="0.3" data-direction="left" data-offset="50">
-            <a href="/contact-us#contactForm"
-            class="btn max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent">
-            <span>Get a Free Quote</span>
+        <li data-ns-animate data-delay="0.3" data-direction="left" data-offset="50">
+            <a href="{{ !empty($banner->url) ? $banner->url : '/contact-us#contactForm' }}"
+            class="btn max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl 
+                    dark:btn-accent btn-secondary hover:btn-white dark:hover:btn-transparent">
+                <span>{{ $banner->button_text ?? 'Get a Free Quote' }}</span>
             </a>
         </li>
+
         {{-- <li data-ns-animate="" data-delay="0.5" data-direction="left" data-offset="50">
             <a href="#"
             class="btn btn-white max-md:btn-md w-full md:w-auto max-md:mx-auto btn-xl hover:btn-secondary dark:btn-transparent dark:hover:btn-accent">

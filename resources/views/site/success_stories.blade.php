@@ -10,6 +10,6 @@
         
         @include ('site.success_stories.breadcrumb')
         @include ('site.success_stories.list')
-        @include ('site.success_stories.cta')
+        {{-- @include ('site.success_stories.cta') --}}
     @endif
     @include ('site.footer')
