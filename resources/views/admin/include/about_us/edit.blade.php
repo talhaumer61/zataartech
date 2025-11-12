@@ -40,6 +40,46 @@
                         </div>
 
                         <div class="col-md-6">
+                            <label class="form-label fw-semibold">Mission Tag</label>
+                            <input 
+                                type="text" 
+                                name="mission_tag" 
+                                class="form-control" 
+                                value="{{ old('mission_tag', $about->mission_tag ?? '') }}" 
+                                placeholder="Enter Mission Section Tag">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Mission Heading</label>
+                            <input 
+                                type="text" 
+                                name="mission_heading" 
+                                class="form-control" 
+                                value="{{ old('mission_heading', $about->mission_heading ?? '') }}" 
+                                placeholder="Enter Mission Section Heading">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Vision Tag</label>
+                            <input 
+                                type="text" 
+                                name="vision_tag" 
+                                class="form-control" 
+                                value="{{ old('vision_tag', $about->vision_tag ?? '') }}" 
+                                placeholder="Enter Vision Section Tag">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Vision Heading</label>
+                            <input 
+                                type="text" 
+                                name="vision_heading" 
+                                class="form-control" 
+                                value="{{ old('vision_heading', $about->vision_heading ?? '') }}" 
+                                placeholder="Enter Vision Section Heading">
+                        </div>
+                        
+                        <div class="col-md-6">
                             <label class="form-label fw-semibold">Mission</label>
                             <textarea name="mission" class="form-control" id="ckeditor">{{ old('mission', $about->mission ?? '') }}</textarea>
                         </div>

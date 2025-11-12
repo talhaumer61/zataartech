@@ -13,6 +13,7 @@ use App\Http\Controllers\admin\AdminContactQueryController;
 use App\Http\Controllers\admin\AdminBannerController;
 use App\Http\Controllers\admin\AdminHomePageController;
 use App\Http\Controllers\admin\AdminProfileController;
+use App\Http\Controllers\admin\AdminFlagsController;
 use App\Http\Controllers\site\AboutUsController;
 use App\Http\Controllers\site\SuccessStoriesController;
 use App\Http\Controllers\site\ContactUsController;
@@ -97,4 +98,11 @@ Route::middleware([AdminAuth::class])->group(function () {
 
     Route::get('/my-profile', [AdminProfileController::class, 'index'])->name('admin.profile');
     Route::put('/admin/profile', [AdminProfileController::class, 'update'])->name('admin.profile.update');
+
+    // ✅ Flags
+    Route::get('/portal/flags/{action?}/{id?}', [AdminFlagsController::class, 'index'])->name('admin.flags');
+    Route::post('/portal/flags/store', [AdminFlagsController::class, 'store'])->name('admin.flags.store');
+    Route::post('/portal/flags/update/{id}', [AdminFlagsController::class, 'update'])->name('admin.flags.update');
+    Route::delete('/portal/flags/delete/{id}', [AdminFlagsController::class, 'destroy'])->name('admin.flags.delete');
+
 });

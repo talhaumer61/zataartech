@@ -15,8 +15,12 @@ class AboutUs extends Model
     protected $fillable = [
         'status',
         'about_us',
+        'mission_tag',
+        'mission_heading',
         'mission',
         'heading',
+        'vision_tag',
+        'vision_heading',
         'vision',
         'detail',
         'ceo_photo',

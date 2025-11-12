@@ -67,6 +67,17 @@
           </a>
         </li>
         <li class="sidebar-list">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/flags">
+            <svg class="stroke-icon"> 
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-calendar')}}"></use>
+            </svg>
+            <svg class="fill-icon">
+              <use href="{{asset('admin/svg/icon-sprite.svg#fill-widget')}}"></use>
+            </svg>
+            <span>Flags</span>
+          </a>
+        </li>
+        <li class="sidebar-list">
           <a class="sidebar-link sidebar-title link-nav" href="/portal/teams">
             <svg class="stroke-icon"> 
               <use href="{{asset('admin/svg/icon-sprite.svg#stroke-user')}}"></use>

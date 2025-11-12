@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\ContactInfo;
+use App\Models\Flag;
 use App\Models\HomePage;
 use App\Models\Service;
 use Illuminate\Support\Facades\View;
@@ -36,11 +37,15 @@ class AppServiceProvider extends ServiceProvider
             ->latest()
             ->first();
 
-        // Share both globally
+        // ✅ Global flags (status = 1, not soft deleted)
+        $flags = Flag::where('status', 1)->whereNull('deleted_at')->orderBy('id')->get();
+
+        // ✅ Share globally
         View::share([
             'global_services' => $services,
-            'contact_info'  => $contact,
-            'home_info'  => $home,
+            'contact_info'    => $contact,
+            'home_info'       => $home,
+            'global_flags'    => $flags,
         ]);
     }
 }

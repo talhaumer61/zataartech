@@ -17,7 +17,7 @@
             <img src="{{asset( $service->photo )}}" alt="service-details" class="size-full object-cover">
           </figure>
         </div>
-          <div style="display:flex; justify-content: space-around;">
+          <div style="">
             <div>
               <h2 data-ns-animate="" data-delay="0.1" id="sales-management" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">What’s included</h2>
               <p data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);" class="use_cases_para">
@@ -26,22 +26,30 @@
                 </div>
               </p>
             </div>
-              <div>
+              {{-- <div>
                 <h2 data-ns-animate="" data-delay="0.2" id="use-cases" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Use cases</h2>
                 <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
                   <div style="color:white !important;">
                     {!! (html_entity_decode($service->use_cases)) !!}
                   </div>
                 </p>
-              </div>
+              </div> --}}
           </div>
 
-          <h2 data-ns-animate="" data-delay="0.2" id="real-time-analytics" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+          {{-- <h2 data-ns-animate="" data-delay="0.2" id="real-time-analytics" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             Description
-          </h2>
+          </h2> --}}
           <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-            <div style="color:white !important;">
+            {{-- <div style="color:white !important;">
               {!! (html_entity_decode($service->description)) !!}
+            </div> --}}
+            <div>
+              <h2 data-ns-animate="" data-delay="0.2" id="use-cases" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Use cases</h2>
+              <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                <div style="color:white !important;">
+                  {!! (html_entity_decode($service->use_cases)) !!}
+                </div>
+              </p>
             </div>
           </p>
 

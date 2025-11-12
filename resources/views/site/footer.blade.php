@@ -41,19 +41,19 @@
             <img src="{{ asset('images/shared/logo.png') }}" class="hidden dark:block" alt="NextSass">
 
             <!-- Flags below logo -->
-            <div class="flex items-center gap-3 mt-4">
-              <!-- USA Flag -->
-              <div class="w-8 h-8 rounded-full overflow-hidden border border-gray-300 shadow-sm flex items-center justify-center bg-white">
-                <img src="https://flagcdn.com/us.svg" alt="USA Flag"
-                    class="w-10 h-10 object-cover object-center scale-125">
+            @if(!empty($global_flags) && $global_flags->count())
+              <div class="flex items-center gap-3 mt-4">
+                @foreach($global_flags as $flag)
+                  <div class="w-8 h-8 rounded-full overflow-hidden border border-gray-300 shadow-sm flex items-center justify-center bg-white">
+                    <img 
+                      src="{{ asset($flag->flag_image) }}" 
+                      alt="{{ $flag->country_name }} Flag" 
+                      class="w-10 h-10 object-cover object-center scale-125">
+                  </div>
+                @endforeach
               </div>
+            @endif
 
-              <!-- Canada Flag -->
-              <div class="w-8 h-8 rounded-full overflow-hidden border border-gray-300 shadow-sm flex items-center justify-center bg-white">
-                <img src="https://flagcdn.com/ca.svg" alt="Canada Flag"
-                    class="w-10 h-10 object-cover object-center scale-125">
-              </div>
-            </div>
           </figure>
 
           <p class="mt-4 mb-7 text-secondary dark:text-accent">

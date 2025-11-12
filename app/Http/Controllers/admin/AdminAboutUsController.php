@@ -26,7 +26,11 @@ class AdminAboutUsController extends Controller
         $request->validate([
             'about_us' => 'nullable|string',
             'heading' => 'nullable|string',
+            'mission_tag' => 'nullable|string',
+            'mission_heading' => 'nullable|string',
             'mission' => 'nullable|string',
+            'vision_tag' => 'nullable|string',
+            'vision_heading' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
             'status' => 'required|boolean',
@@ -43,7 +47,11 @@ class AdminAboutUsController extends Controller
             'status' => $request->status,
             'about_us' => $request->about_us,
             'heading' => $request->heading,
+            'mission-tag' => $request->mission-tag,
+            'mission_heading' => $request->mission_heading,
             'mission' => $request->mission,
+            'vision_tag' => $request->vision_tag,
+            'vision_heading' => $request->vision_heading,
             'vision' => $request->vision,
             'detail' => $request->detail
         ]);
@@ -58,8 +66,12 @@ class AdminAboutUsController extends Controller
 
         $request->validate([
             'about_us' => 'nullable|string',
-            'mission' => 'nullable|string',
             'heading' => 'nullable|string',
+            'mission_tag' => 'nullable|string',
+            'mission_heading' => 'nullable|string',
+            'mission' => 'nullable|string',
+            'vision_tag' => 'nullable|string',
+            'vision_heading' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
             'status' => 'required|boolean',
@@ -79,7 +91,11 @@ class AdminAboutUsController extends Controller
             'status' => $request->status,
             'about_us' => $request->about_us,
             'heading' => $request->heading,
+            'mission_tag' => $request->mission_tag,
+            'mission_heading' => $request->mission_heading,
             'mission' => $request->mission,
+            'vision_tag' => $request->vision_tag,
+            'vision_heading' => $request->vision_heading,
             'vision' => $request->vision,
             'detail' => $request->detail
         ]);
