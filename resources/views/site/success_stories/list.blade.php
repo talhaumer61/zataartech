@@ -15,11 +15,13 @@
       @foreach($stories as $story)
       <article class="group bg-background-2 dark:bg-background-6 rounded-[20px] overflow-hidden shadow-md hover:shadow-xl transition-all duration-500">
         <!-- Image -->
-        <figure class="w-full h-[250px] overflow-hidden">
+        <figure class="w-full overflow-hidden">
           <img src="{{ asset($story->photo) }}"
-               alt="{{ $story->title }}"
-               class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+              alt="{{ $story->title }}"
+              style="width:100%; aspect-ratio: 16/10; object-fit:cover;"
+              class="transition-transform duration-500 group-hover:scale-110">
         </figure>
+
 
         <!-- Content -->
         <div class="p-6 space-y-3">

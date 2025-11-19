@@ -8,7 +8,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-center mb-14">
       @foreach($teams as $team)
-      <div class="w-[298px] h-[312px] space-y-[34px] mx-auto">
+      <div class="w-[298px] h-[312px] space-y-[34px] mx-auto mt-5">
         <!-- team image -->
         <figure class="size-[156px] rounded-full bg-[#d5dbe3] flex items-center justify-center overflow-hidden mx-auto">
           <img src="{{ asset($team->photo ) }}" 

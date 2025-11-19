@@ -8,7 +8,7 @@
       </h2> --}}
 
       <!-- Cover Image -->
-      <figure data-ns-animate data-delay="0.3" class="max-w-[1290px] overflow-hidden rounded-4xl">
+      <figure data-ns-animate data-delay="0.3" class="max-w-[1090px] h-[300px] overflow-hidden rounded-4xl">
         <img src="{{ asset($story->photo ) }}"
              alt="{{ $story->title }}"
              class="size-full object-cover">

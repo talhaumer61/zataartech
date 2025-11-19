@@ -5,7 +5,7 @@
         <div class="space-y-3">
           <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->mission_tag ? $about->mission_tag : 'Our Mission'  }}</span>
           <h2 data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-            {{ $about->mission_heading ? $about->mission_heading : 'To help teams work and grow with smart, secure software.' }}
+            {{ $about->mission_heading ? $about->mission_heading : '' }}
           </h2>
           <p data-ns-animate="" data-delay="0.4" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             {!! $about->mission !!}
@@ -28,7 +28,7 @@
           <div class="space-y-3">
             <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->vision_tag ? $about->vision_tag : 'Our Vision'  }}</span>
             <h2 data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-            {{ $about->vision_heading ? $about->vision_heading : 'To help teams work and grow with smart, secure software.' }}
+            {{ $about->vision_heading ? $about->vision_heading : '' }}
           </h2>
             <p data-ns-animate="" data-delay="0.4" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
               {!! $about->vision !!}
