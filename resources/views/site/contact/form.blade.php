@@ -188,7 +188,7 @@
               </label>
               <label for="terms" class="text-tagline-3 cursor-pointer text-secondary/60 dark:text-accent/60">
                 I agree with the
-                <a href="#" class="text-primary-500 underline text-tagline-3">terms and conditions</a>
+                <a href="/terms-conditions" class="text-primary-500 underline text-tagline-3">terms and conditions</a>
               </label>
             </fieldset>
 

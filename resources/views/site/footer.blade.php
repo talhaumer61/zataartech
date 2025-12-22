@@ -146,6 +146,9 @@
               <li>
                 <a href="/contact-us" class="footer-link-v2"> Contact Us </a>
               </li>
+              <li>
+                <a href="/terms-conditions" class="footer-link-v2"> Terms & Conditions </a>
+              </li>
             </ul>
           </div>
         </div>

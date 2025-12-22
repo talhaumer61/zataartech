@@ -19,6 +19,8 @@ use App\Http\Controllers\site\SuccessStoriesController;
 use App\Http\Controllers\site\ContactUsController;
 use App\Http\Controllers\site\HomeController;
 use App\Http\Controllers\site\ServicesController;
+use App\Http\Controllers\admin\AdminTermsConditionsController;
+use App\Http\Controllers\site\TermsConditionsController;
 use App\Http\Middleware\AdminAuth;
 
 // ---------------- SITE ROUTES ---------------- //
@@ -30,6 +32,7 @@ Route::get('/success-stories/{href}', [SuccessStoriesController::class, 'detail'
 Route::get('/about-us', [AboutUsController::class, 'index'])->name('about');
 Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contact');
 Route::post('/contact-us/submit', [ContactUsController::class, 'store'])->name('contact.store');
+Route::get('/terms-conditions', [TermsConditionsController::class, 'index'])->name('terms.conditions');
 
 
 // ---------------- ADMIN AUTH ---------------- //
@@ -104,5 +107,12 @@ Route::middleware([AdminAuth::class])->group(function () {
     Route::post('/portal/flags/store', [AdminFlagsController::class, 'store'])->name('admin.flags.store');
     Route::post('/portal/flags/update/{id}', [AdminFlagsController::class, 'update'])->name('admin.flags.update');
     Route::delete('/portal/flags/delete/{id}', [AdminFlagsController::class, 'destroy'])->name('admin.flags.delete');
+
+    
+    // ✅ Terms & Conditions
+    Route::get('/portal/terms/{action?}/{href?}', [AdminTermsConditionsController::class, 'index'])->name('admin.terms');
+    Route::post('/portal/terms/store', [AdminTermsConditionsController::class, 'store'])->name('admin.terms.store');
+    Route::post('/portal/terms/update/{id}', [AdminTermsConditionsController::class, 'update'])->name('admin.terms.update');
+    Route::delete('/portal/terms/delete/{id}', [AdminTermsConditionsController::class, 'destroy'])->name('admin.terms.delete');
 
 });

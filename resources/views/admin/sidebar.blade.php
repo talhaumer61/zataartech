@@ -139,6 +139,17 @@
             <span>Home Page Content</span>
           </a>
         </li>
+        <li class="sidebar-list">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/termsde">
+            <svg class="stroke-icon"> 
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-maps')}}"></use>
+            </svg>
+            <svg class="fill-icon">
+              <use href="{{asset('admin/svg/icon-sprite.svg#fill-widget')}}"></use>
+            </svg>
+            <span>Terms & Conditions</span>
+          </a>
+        </li>
       </ul>
       <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
     </div>
