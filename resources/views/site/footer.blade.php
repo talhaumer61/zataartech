@@ -67,7 +67,7 @@
               </svg>
             </a>
 
-            <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
+            {{-- <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
 
             <a href="{{ $contact_info->instagram ?? '#' }}" target="_blank" class="footer-social-link">
               <span class="sr-only">Instagram</span>
@@ -77,7 +77,7 @@
                 <rect x="11" y="5" width="2" height="2" rx="1" transform="rotate(-90 11 5)" class="fill-secondary dark:fill-accent"></rect>
                 <rect x="11.5" y="4.5" width="1" height="1" rx="0.5" transform="rotate(-90 11.5 4.5)" class="stroke-secondary dark:stroke-accent" stroke-linecap="round"></rect>
               </svg>
-            </a>
+            </a> --}}
 
             <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
 
@@ -88,7 +88,7 @@
               </svg>
             </a>
 
-            <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
+            {{-- <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
 
             <a href="{{ $contact_info->youtube ?? '#' }}" target="_blank" class="footer-social-link">
               <span class="sr-only">YouTube</span>
@@ -96,7 +96,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.668 15.0028C18.9724 15.0867 20.91 13.29 21 10.9858V5.01982C20.91 2.71569 18.9724 0.918929 16.668 1.00282H5.332C3.02763 0.918929 1.08998 2.71569 1 5.01982V10.9858C1.08998 13.29 3.02763 15.0867 5.332 15.0028H16.668Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.508 5.17711L13.669 7.32511C13.8738 7.44468 13.9997 7.66398 13.9997 7.90111C13.9997 8.13824 13.8738 8.35754 13.669 8.47711L10.508 10.8271C9.908 11.2341 9 10.8871 9 10.2511V5.75111C9 5.11811 9.909 4.77011 10.508 5.17711Z" class="stroke-secondary dark:stroke-accent" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-            </a>
+            </a> --}}
 
             <div class="h-5 w-px bg-stroke-1 dark:bg-stroke-8"></div>
             {{-- <a href="#" class="footer-social-link">

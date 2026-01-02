@@ -30,13 +30,13 @@
                                 @csrf
 
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-md-6">
                                         <div class="mb-3">
                                             <label>Title <span class="text-danger">*</span></label>
                                             <input class="form-control" type="text" name="title" placeholder="Enter service title" required>
                                         </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-6">
                                         <div class="mb-3">
                                             <label>Status</label>
                                             <select name="status" class="form-select">
@@ -56,20 +56,34 @@
                                     </div>
                                 </div>
 
+                                <h5 class="mt-4 mb-2 fw-bold text-primary">Section 1</h5>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-12">
                                         <div class="mb-3">
-                                            <label>What's Included</label>
-                                            <textarea class="form-control" name="whats_included" id="ckeditor" rows="3" placeholder="List features or inclusions"></textarea>
+                                            <label>Title <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" name="sec1_title" placeholder="Enter Section Title">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label>Content</label>
+                                            <textarea class="form-control" name="sec1_title" id="ckeditor" rows="3" placeholder="List features or inclusions"></textarea>
                                         </div>
                                     </div>
                                 </div>
 
+                                <h5 class="mt-4 mb-2 fw-bold text-primary">Section 2</h5>
                                 <div class="row">
-                                    <div class="col">
+                                    <div class="col-12">
                                         <div class="mb-3">
-                                            <label>Use Cases</label>
-                                            <textarea class="form-control" name="use_cases" id="ckeditor" rows="3" placeholder="Describe use cases"></textarea>
+                                            <label>Title <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" name="sec2_title" placeholder="Enter Section Title">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <label>Content</label>
+                                            <textarea class="form-control" name="sec2_content" id="ckeditor" rows="3" placeholder="Describe use cases"></textarea>
                                         </div>
                                     </div>
                                 </div>

@@ -20,5 +20,9 @@ class ContactInfo extends Model
         'phone2',
         'email1',
         'email2',
+        'facebook',
+        'instagram',
+        'linkedin',
+        'youtube',
     ];
 }

@@ -158,7 +158,7 @@
               <!-- number -->
               <div class="space-y-2 max-w-[364px] w-full">
                 <label for="number" class="block text-tagline-2 text-secondary dark:text-accent font-medium">Your number</label>
-                <input type="text" id="number" name="number" placeholder="Enter your number" required="" autocomplete="tel" class="w-full px-[18px] dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 py-3 h-[48px] xl:h-[41px] rounded-full dark:bg-background-6 border border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal">
+                <input type="text" id="number" name="number" placeholder="Enter your number" autocomplete="tel" class="w-full px-[18px] dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 py-3 h-[48px] xl:h-[41px] rounded-full dark:bg-background-6 border border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal">
               </div>
             </div>
 
@@ -171,13 +171,13 @@
             <!-- subject  -->
             <div class="space-y-2">
               <label for="subject" class="block text-tagline-2 text-secondary dark:text-accent font-medium">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Enter your subject" required="" class="w-full px-[18px] dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 py-3 h-[48px] xl:h-[41px] rounded-full dark:bg-background-6 border border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal">
+              <input type="text" id="subject" name="subject" placeholder="Enter your subject" class="w-full px-[18px] dark:focus-visible:border-stroke-4/20 dark:border-stroke-7 py-3 h-[48px] xl:h-[41px] rounded-full dark:bg-background-6 border border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal">
             </div>
 
             <!-- message -->
             <div class="space-y-2">
               <label for="message" class="block text-tagline-2 text-secondary dark:text-accent font-medium">Write message</label>
-              <textarea id="message" name="message" rows="7" placeholder="Enter your messages" required="" class="w-full px-[18px] py-3 rounded-xl border dark:bg-background-6 dark:border-stroke-7 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary dark:focus-visible:border-stroke-4/20 placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal"></textarea>
+              <textarea id="message" name="message" rows="7" placeholder="Enter your messages" class="w-full px-[18px] py-3 rounded-xl border dark:bg-background-6 dark:border-stroke-7 border-stroke-3 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:outline-none focus:border-secondary dark:focus-visible:border-stroke-4/20 placeholder:text-tagline-2 dark:placeholder:text-accent/60 dark:text-accent placeholder:font-normal font-normal"></textarea>
             </div>
 
             <!-- terms checkbox -->

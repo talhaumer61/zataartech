@@ -23,8 +23,8 @@
                         <div class="flex items-center justify-center">
                             @if($service->icon)
                                 <img src="{{ asset($service->icon) }}" alt="{{ $service->title }}" class="w-20 h-20 object-cover rounded-full">
-                            @else
-                                <span class="ns-shape-47 text-[52px] text-secondary dark:text-accent"></span>
+                                @else
+                                <img src="{{ asset('admin/images/default_service.png') }}" alt="{{ $service->title }}" class="w-20 h-20 object-cover rounded-full">
                             @endif
                         </div>
 

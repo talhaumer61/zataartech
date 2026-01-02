@@ -54,7 +54,7 @@
                                     <td class="text-center">{{ $index + 1 }}</td>
                                     <td>{{ $q->fullname }}</td>
                                     <td>{{ $q->email }}</td>
-                                    <td>{{ $q->subject }}</td>
+                                    <td class="text-center">{{ $q->subject ?? "-" }}</td>
                                     <td class="text-center">
                                         <!-- View Button -->
                                         <button type="button"
@@ -108,23 +108,23 @@
             <div class="modal-body">
                 <table class="table table-borderless">
                     <tr>
-                        <th style="width:150px;">Name:</th>
+                        <th class="text-primary fw-bold" style="width:90px;">Name:</th>
                         <td id="modalName"></td>
                     </tr>
                     <tr>
-                        <th>Email:</th>
+                        <th class="text-primary fw-bold">Email:</th>
                         <td id="modalEmail"></td>
                     </tr>
                     <tr>
-                        <th>Phone:</th>
+                        <th class="text-primary fw-bold">Phone:</th>
                         <td id="modalNumber"></td>
                     </tr>
                     <tr>
-                        <th>Subject:</th>
+                        <th class="text-primary fw-bold">Subject:</th>
                         <td id="modalSubject"></td>
                     </tr>
                     <tr>
-                        <th>Message:</th>
+                        <th class="text-primary fw-bold">Message:</th>
                         <td id="modalMessage" class="text-wrap"></td>
                     </tr>
                 </table>
@@ -138,16 +138,37 @@
 
 <!-- JS for Modal Data -->
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    var queryModal = document.getElementById('queryModal');
-    queryModal.addEventListener('show.bs.modal', function (event) {
-        var button = event.relatedTarget;
+    document.addEventListener('DOMContentLoaded', function () {
 
-        document.getElementById('modalName').textContent = button.getAttribute('data-name');
-        document.getElementById('modalEmail').textContent = button.getAttribute('data-email');
-        document.getElementById('modalNumber').textContent = button.getAttribute('data-number');
-        document.getElementById('modalSubject').textContent = button.getAttribute('data-subject');
-        document.getElementById('modalMessage').textContent = button.getAttribute('data-message');
+        function safeValue(value) {
+            if (value === null || value === undefined || value.trim() === '') {
+                return '<span class="text-danger fw-bold">N/A</span>';
+            }
+            return value;
+        }
+
+        var queryModal = document.getElementById('queryModal');
+
+        queryModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+
+            document.getElementById('modalName').innerHTML =
+                safeValue(button.getAttribute('data-name'));
+
+            document.getElementById('modalEmail').innerHTML =
+                safeValue(button.getAttribute('data-email'));
+
+            document.getElementById('modalNumber').innerHTML =
+                safeValue(button.getAttribute('data-number'));
+
+            document.getElementById('modalSubject').innerHTML =
+                safeValue(button.getAttribute('data-subject'));
+
+            document.getElementById('modalMessage').innerHTML =
+                safeValue(button.getAttribute('data-message'));
+        });
+
     });
-});
 </script>
+
+

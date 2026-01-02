@@ -8,7 +8,7 @@
           <h3>{{ $index + 1 }}. {{ $term->title }}</h3>
 
           {{-- Allow HTML from admin (CKEditor) --}}
-          <div class="prose max-w-none">
+          <div class="prose max-w-none text-white">
             {!! $term->content !!}
           </div>
         </div>

@@ -10,7 +10,8 @@ class AdminContactInfoController extends Controller
 {
     public function index($action = 'list', $id = null)
     {
-        $contactRecord = ContactInfo::first();
+        $contactRecord = ContactInfo::where('status', 1)->first();
+        
         $contact = null;
 
         if ($action === 'edit' && $id) {
@@ -32,6 +33,8 @@ class AdminContactInfoController extends Controller
             'email1' => 'nullable|email|max:255',
             'email2' => 'nullable|email|max:255',
             'status' => 'required|boolean',
+            'facebook' => 'nullable|url|max:255',
+            'linkedin' => 'nullable|url|max:255',
         ]);
 
         ContactInfo::create($request->all());
@@ -54,6 +57,8 @@ class AdminContactInfoController extends Controller
             'email1' => 'nullable|email|max:255',
             'email2' => 'nullable|email|max:255',
             'status' => 'required|boolean',
+            'facebook' => 'nullable|url|max:255',
+            'linkedin' => 'nullable|url|max:255',
         ]);
 
         $contact->update($request->all());

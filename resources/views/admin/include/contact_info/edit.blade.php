@@ -77,12 +77,12 @@
                                 value="{{ old('facebook', $contact->facebook ?? '') }}">
                         </div>
 
-                        <div class="col-md-6">
+                        {{-- <div class="col-md-6">
                             <label class="form-label fw-semibold">Instagram URL</label>
                             <input type="url" name="instagram" class="form-control"
                                 placeholder="https://instagram.com/yourprofile"
                                 value="{{ old('instagram', $contact->instagram ?? '') }}">
-                        </div>
+                        </div> --}}
 
                         <div class="col-md-6">
                             <label class="form-label fw-semibold">LinkedIn URL</label>
@@ -91,12 +91,12 @@
                                 value="{{ old('linkedin', $contact->linkedin ?? '') }}">
                         </div>
 
-                        <div class="col-md-6">
+                        {{-- <div class="col-md-6">
                             <label class="form-label fw-semibold">YouTube URL</label>
                             <input type="url" name="youtube" class="form-control"
                                 placeholder="https://youtube.com/@yourchannel"
                                 value="{{ old('youtube', $contact->youtube ?? '') }}">
-                        </div>
+                        </div> --}}
                     </div>
 
                     <div class="mt-4 text-end">

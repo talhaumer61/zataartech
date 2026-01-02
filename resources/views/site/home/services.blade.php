@@ -28,6 +28,10 @@
               <div>
                 <img src="{{ asset( $service->icon ) }}" alt="{{ $service->title }}" class="w-16 h-16 object-contain rounded-full">
               </div>
+            @else
+              <div>
+                <img src="{{ asset( 'admin/images/default_service.png' ) }}" alt="Default Service Icon" class="w-16 h-16 object-contain rounded-full">
+              </div>
             @endif
 
             {{-- Title and description --}}

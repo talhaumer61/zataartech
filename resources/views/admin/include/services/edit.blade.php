@@ -65,20 +65,38 @@
                                 </div>
                             </div>
 
+                            <h5 class="mt-4 mb-2 fw-bold text-primary">Section 1</h5>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12">
                                     <div class="mb-3">
-                                        <label>What's Included</label>
-                                        <textarea class="form-control" name="whats_included" id="ckeditor">{{ old('whats_included', $service->whats_included ?? '') }}</textarea>
+                                        <label>Title <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text" name="sec1_title"
+                                            placeholder="Enter Section Title"
+                                            value="{{ old('sec1_title', $service->sec1_title ?? '') }}">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label>Content</label>
+                                        <textarea class="form-control" name="sec1_content" id="ckeditor">{{ old('sec1_content', $service->sec1_content ?? '') }}</textarea>
                                     </div>
                                 </div>
                             </div>
 
+                            <h5 class="mt-4 mb-2 fw-bold text-primary">Section 2</h5>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label>Title <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text" name="sec2_title"
+                                            placeholder="Enter Section Title"
+                                            value="{{ old('sec2_title', $service->sec2_title ?? '') }}">
+                                    </div>
+                                </div>
+                                <div class="col-12">
                                     <div class="mb-3">
                                         <label>Use Cases</label>
-                                        <textarea class="form-control" name="use_cases" id="ckeditor">{{ old('use_cases', $service->use_cases ?? '') }}</textarea>
+                                        <textarea class="form-control" name="sec2_content" id="ckeditor">{{ old('sec2_content', $service->sec2_content ?? '') }}</textarea>
                                     </div>
                                 </div>
                             </div>

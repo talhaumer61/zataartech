@@ -90,7 +90,7 @@
                                 </td>
                             </tr>
 
-                            <tr>
+                            {{-- <tr>
                                 <th>Instagram</th>
                                 <td>
                                     @if(!empty($contactRecord->instagram))
@@ -101,7 +101,7 @@
                                         <span class="text-muted">Not Provided</span>
                                     @endif
                                 </td>
-                            </tr>
+                            </tr> --}}
 
                             <tr>
                                 <th>LinkedIn</th>
@@ -116,7 +116,7 @@
                                 </td>
                             </tr>
 
-                            <tr>
+                            {{-- <tr>
                                 <th>YouTube</th>
                                 <td>
                                     @if(!empty($contactRecord->youtube))
@@ -127,7 +127,7 @@
                                         <span class="text-muted">Not Provided</span>
                                     @endif
                                 </td>
-                            </tr>
+                            </tr> --}}
 
                             <tr>
                                 <th>Status</th>

@@ -55,7 +55,7 @@
                                                                 width="60" height="60" 
                                                                 class="rounded shadow-sm border">
                                                         @else
-                                                            <img src="{{ asset('admin/images/placeholder.png') }}" 
+                                                            <img src="{{ asset('admin/images/default_service.png') }}" 
                                                                 width="60" height="60" 
                                                                 class="rounded shadow-sm border" 
                                                                 alt="no image">

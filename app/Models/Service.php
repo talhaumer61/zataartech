@@ -15,8 +15,10 @@ class Service extends Model
         'photo',
         'icon',
         'overview',
-        'whats_included',
-        'use_cases',
+        'sec1_title',
+        'sec1_content',
+        'sec2_title',
+        'sec2_content',
         'description',
         'status',
     ];
