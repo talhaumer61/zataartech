@@ -139,23 +139,26 @@
                     </button>
                     <div class="hidden ml-3.5 transition-all duration-300 w-full bg-white dark:bg-background-7 max-h-[500px] overflow-y-auto scroll-bar">
                         <ul>
-                        <li>
-                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
-                            Services 01
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
-                            Services 02
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left block">
-                            Services 03
-                            </a>
-                        </li>
+                            @foreach($global_services as $service)
+                                <li>
+                                    <a href="{{ url('services/' . $service->href) }}"
+                                    class="text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 hover:text-secondary dark:hover:text-accent transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between">
+                                        
+                                        <span>{{ $service->title }}</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+                                            <path d="M6 4L10 8L6 12"
+                                                class="stroke-secondary dark:stroke-accent"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
+
                 </li>
                 <li class="relative space-y-0">
                     <a href="/success-stories" class="sub-menu text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 transition-all duration-200 py-3 border-b border-stroke-4 dark:border-stroke-6 w-full text-left flex items-center justify-between cursor-pointer">
