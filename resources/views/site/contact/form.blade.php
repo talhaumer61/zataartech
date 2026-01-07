@@ -74,7 +74,7 @@
       <div class="max-w-[680px] mx-auto text-center space-y-3">
         <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading ?? "Get in Touch With Us" }}</h2>
         <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-          {{ $contact->description ?? "We are always here to help you with any queries, feedback, or collaboration ideas. Feel free to reach out through phone, email, or visit our office during working hours." }}
+          {{ $contact->description ?? "" }}
         </p>
       </div>
 
@@ -93,7 +93,7 @@
 
             <div class="space-y-2.5">
               <p class="text-heading-6 text-accent">Our Address</p>
-              <p class="text-accent/60">{{ $contact->address1 ?? "2nd Floor, Innovation Hub, Lahore, Pakistan" }}</p>
+              <p class="text-accent/60">{{ $contact->address1 ?? "N / A" }}</p>
             </div>
           </div>
 
@@ -112,10 +112,10 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Email Us</p>
                 <p class="text-accent/60">
-                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email1 ?? "info@zataartech.com" }}</a>
+                  <a href="mailto:{{ $contact->email1 }}">{{ $contact->email1 ?? "N/A" }}</a>
                 </p>
                 <p class="text-accent/60">
-                  <a href="mailto:hello@Zataar Tech.com">{{ $contact->email2 ?? "support@zataartech.com" }}</a>
+                  <a href="mailto:{{$contact->email2}}">{{ $contact->email2 ?? "N/A" }}</a>
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Call Us</p>
                 <p class="text-accent/60">
-                  <a href="tel:+391035256845933">{{ $contact->phone1 ?? "+92 300 1234567" }}</a>
+                  <a href="tel:{{$contact->phone1}}">{{ $contact->phone1 ?? "N/A" }}</a>
                 </p>
               </div>
             </div>

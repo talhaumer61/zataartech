@@ -32,7 +32,6 @@ class AdminContactInfoController extends Controller
             'phone2' => 'nullable|string|max:50',
             'email1' => 'nullable|email|max:255',
             'email2' => 'nullable|email|max:255',
-            'status' => 'required|boolean',
             'facebook' => 'nullable|url|max:255',
             'linkedin' => 'nullable|url|max:255',
         ]);
@@ -56,7 +55,6 @@ class AdminContactInfoController extends Controller
             'phone2' => 'nullable|string|max:50',
             'email1' => 'nullable|email|max:255',
             'email2' => 'nullable|email|max:255',
-            'status' => 'required|boolean',
             'facebook' => 'nullable|url|max:255',
             'linkedin' => 'nullable|url|max:255',
         ]);

@@ -140,7 +140,7 @@
           </a>
         </li>
         <li class="sidebar-list">
-          <a class="sidebar-link sidebar-title link-nav" href="/portal/termsde">
+          <a class="sidebar-link sidebar-title link-nav" href="/portal/terms">
             <svg class="stroke-icon"> 
               <use href="{{asset('admin/svg/icon-sprite.svg#stroke-maps')}}"></use>
             </svg>

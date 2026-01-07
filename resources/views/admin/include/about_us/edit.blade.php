@@ -107,13 +107,6 @@
                             @endif
                         </div> --}}
 
-                        <div class="col-md-12">
-                            <label class="form-label fw-semibold">Status</label>
-                            <select name="status" class="form-select">
-                                <option value="1" {{ old('status', $about->status ?? '') == 1 ? 'selected' : '' }}>Active</option>
-                                <option value="0" {{ old('status', $about->status ?? '') == 0 ? 'selected' : '' }}>Inactive</option>
-                            </select>
-                        </div>
                     </div>
 
                     <div class="mt-4 text-end">

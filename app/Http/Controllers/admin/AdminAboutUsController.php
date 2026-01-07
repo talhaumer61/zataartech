@@ -33,7 +33,6 @@ class AdminAboutUsController extends Controller
             'vision_heading' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
-            'status' => 'required|boolean',
         ]);
 
         $photoPath = null;
@@ -44,10 +43,9 @@ class AdminAboutUsController extends Controller
         }
 
         AboutUs::create([
-            'status' => $request->status,
             'about_us' => $request->about_us,
             'heading' => $request->heading,
-            'mission-tag' => $request->mission-tag,
+            'mission_tag' => $request->mission_tag,
             'mission_heading' => $request->mission_heading,
             'mission' => $request->mission,
             'vision_tag' => $request->vision_tag,
@@ -74,7 +72,6 @@ class AdminAboutUsController extends Controller
             'vision_heading' => 'nullable|string',
             'vision' => 'nullable|string',
             'detail' => 'nullable|string',
-            'status' => 'required|boolean',
         ]);
 
         $photoPath = $about->ceo_photo;
@@ -88,7 +85,6 @@ class AdminAboutUsController extends Controller
         }
 
         $about->update([
-            'status' => $request->status,
             'about_us' => $request->about_us,
             'heading' => $request->heading,
             'mission_tag' => $request->mission_tag,

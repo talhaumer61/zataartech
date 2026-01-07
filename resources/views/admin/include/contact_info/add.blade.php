@@ -20,14 +20,6 @@
                                 value="{{ old('heading', $contact->heading ?? '') }}">
                         </div>
 
-                        <div class="col-md-6">
-                            <label class="form-label fw-semibold">Status</label>
-                            <select name="status" class="form-select">
-                                <option value="1" {{ old('status', $contact->status ?? 1) == 1 ? 'selected' : '' }}>Active</option>
-                                <option value="0" {{ old('status', $contact->status ?? 0) == 0 ? 'selected' : '' }}>Inactive</option>
-                            </select>
-                        </div>
-
                         <div class="col-12">
                             <label class="form-label fw-semibold">Description</label>
                             <textarea name="description" class="form-control" rows="3">{{ old('description', $contact->description ?? '') }}</textarea>

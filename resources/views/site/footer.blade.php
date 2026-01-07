@@ -204,7 +204,7 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     @else
-        <a href="#" class="whatsapp-float">
+        <a href="javascript:void(0)" class="whatsapp-float">
             <i class="fab fa-whatsapp"></i>
         </a>
     @endif
