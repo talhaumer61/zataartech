@@ -1,9 +1,11 @@
-<section class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] overflow-hidden">
+<section class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[35px] xl:pb-[500px] overflow-hidden">
   <div class="main-container">
     <div class="grid grid-cols-12 lg:gap-x-0 xl:gap-x-28 gap-y-12 items-center">
       <div class="col-span-12 lg:col-span-6">
         <div class="space-y-3">
-          <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->mission_tag ? $about->mission_tag : 'Our Mission'  }}</span>
+          @if ($about->mission_tag)
+            <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->mission_tag ? $about->mission_tag : ''  }}</span>
+          @endif
           <h2 data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             {{ $about->mission_heading ? $about->mission_heading : '' }}
           </h2>
@@ -26,7 +28,9 @@
 
         <div class="col-span-12 lg:col-span-12 text-center">
           <div class="space-y-3">
-            <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->vision_tag ? $about->vision_tag : 'Our Vision'  }}</span>
+            @if ($about->vision_tag)
+              <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->vision_tag ? $about->vision_tag : ''  }}</span>
+            @endif
             <h2 data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
             {{ $about->vision_heading ? $about->vision_heading : '' }}
           </h2>

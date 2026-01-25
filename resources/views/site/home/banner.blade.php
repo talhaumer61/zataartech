@@ -70,7 +70,7 @@
     </figure>
     <!-- Content -->
     <div class="main-container flex flex-col items-center text-center z-10">
-        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow mb-5">
+        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow mb-5 capitalize">
             {{ $banner->tag ?? "Digital Solutions" }}
         </span>
         <h1 data-ns-animate data-delay="0.2"class="font-medium mb-4 max-[426px]:text-heading-5 max-sm:text-heading-4 max-sm:max-w-[450px] max-w-[700px] text-center mx-auto leading-tight">

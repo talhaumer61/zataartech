@@ -3,7 +3,7 @@
     <div class="space-y-[70px]">
       <!-- heading  -->
       <div class="text-center">
-        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5 capitalize" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
           {{ $home->success_stories_tag ?? "Success Stories"}}
         </span>
         <h2 data-ns-animate="" data-delay="0.2" class="mb-3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $home->success_stories_heading ?? "Our recent news & insights"}}</h2>
@@ -29,9 +29,10 @@
                               <div class="mb-7 space-y-4">
                                   <div class="flex items-center">
                                       <div class="flex items-center gap-2">
-                                          <time datetime="{{ $story->created_at->format('Y-m-d') }}" class="text-tagline-2 text-secondary/60 dark:text-accent/60">
-                                              {{ $story->created_at->format('d.m.Y') }}
-                                          </time>
+                                        <time datetime="{{ $story->dated ?? $story->created_at->format('Y-m-d') }}" 
+                                            class="text-tagline-2 text-secondary/60 dark:text-accent/60">
+                                            {{ $story->dated ?? $story->created_at->format('Y-m-d') }}
+                                        </time>
                                       </div>
                                   </div>
 
@@ -68,9 +69,10 @@
                                       <div class="xl:py-8 py-4 px-5 sm:px-4 xl:px-0">
                                           <div class="mb-7 space-y-4">
                                               <div class="flex items-center gap-2">
-                                                  <time datetime="{{ $story->created_at->format('Y-m-d') }}" class="text-tagline-2 text-secondary/60 dark:text-accent/60">
-                                                      {{ $story->created_at->format('d.m.Y') }}
-                                                  </time>
+                                                    <time datetime="{{ $story->dated ?? $story->created_at->format('Y-m-d') }}" 
+                                                        class="text-tagline-2 text-secondary/60 dark:text-accent/60">
+                                                        {{ $story->dated ?? $story->created_at->format('Y-m-d') }}
+                                                    </time>
                                               </div>
 
                                               <h3 class="text-heading-6 xl:text-heading-5">

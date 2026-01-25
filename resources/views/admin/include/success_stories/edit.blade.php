@@ -55,17 +55,38 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label>Linked Service (optional)</label>
-                                <select name="id_service" class="form-select">
-                                    <option value="">-- Select Service --</option>
-                                    @foreach($services as $service)
-                                        <option value="{{ $service->id }}" {{ old('id_service', $story->id_service ?? '') == $service->id ? 'selected' : '' }}>
-                                            {{ $service->title }}
-                                        </option>
-                                    @endforeach
-                                </select>
+                            <div class="row">
+                                <!-- Linked Service -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Linked Service (optional)</label>
+                                        <select name="id_service" class="form-select">
+                                            <option value="">-- Select Service --</option>
+                                            @foreach($services as $service)
+                                                <option value="{{ $service->id }}" 
+                                                    {{ old('id_service', $story->id_service ?? '') == $service->id ? 'selected' : '' }}>
+                                                    {{ $service->title }}
+                                                </option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Date Input -->
+<div class="col-md-6">
+    <div class="mb-3">
+        <label>Date</label>
+        <input 
+            type="date" 
+            name="dated" 
+            class="form-control"
+            value="{{ old('dated', isset($story->dated) ? \Carbon\Carbon::parse($story->dated)->format('Y-m-d') : '') }}"
+        >
+    </div>
+</div>
+
                             </div>
+
 
                             <div class="mb-3">
                                 <label>Problem</label>

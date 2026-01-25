@@ -25,7 +25,7 @@
           <figure data-ns-animate data-delay="0.4" data-direction="right" data-offset="100"
                   data-spring="true" data-duration="2"
                   class="absolute max-sm:w-[100px] -top-12 -right-20 sm:-top-[90px] sm:-right-[200px]
-                  lg:-right-[150px] xl:-right-[200px] rounded-2xl hidden sm:inline-block">
+                  lg:-right-[150px] xl:-right-[150px] rounded-2xl hidden sm:inline-block">
               <img src="{{ $image1 }}" alt="about-data-integration"
                   class="size-full object-cover rounded-[20px] block dark:hidden">
               <img src="{{ $image1 }}" alt="about-data-integration"
@@ -41,7 +41,7 @@
 
       <!-- Integration Data -->
       <div class="pt-5 max-lg:order-0 text-center sm:text-left section-content">
-        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5">
+        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5 capitalize">
           {{ $home->section1_tag ?? "Data Integrations"}}
         </span>
         <h2 data-ns-animate="" data-delay="0.2" class="mb-3">
@@ -80,7 +80,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-[112px] py-28 section-content">
       <!-- Integration Data -->
       <div class="pt-5 max-lg:order-1 text-center sm:text-left">
-        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5">
+        <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5 capitalize">
           {{ $home->section2_tag ?? "Strong Solutions"}}
         </span>
         <h2 data-ns-animate="" data-delay="0.2" class="mb-3">

@@ -14,6 +14,7 @@ class SuccessStory extends Model
         'status',
         'title',
         'href',
+        'dated',
         'id_service',
         'photo',
         'problem',
@@ -26,4 +27,5 @@ class SuccessStory extends Model
     {
         return $this->belongsTo(Service::class, 'id_service');
     }
+    
 }

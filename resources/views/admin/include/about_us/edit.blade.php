@@ -24,7 +24,17 @@
                     @csrf
 
                     <div class="row g-4">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Tag</label>
+                            <input 
+                                type="text" 
+                                name="tag" 
+                                class="form-control" 
+                                value="{{ old('tag', $about->tag ?? '') }}" 
+                                placeholder="Enter About Us tag">
+                        </div>
+
+                        <div class="col-md-6">
                             <label class="form-label fw-semibold">Heading</label>
                             <input 
                                 type="text" 

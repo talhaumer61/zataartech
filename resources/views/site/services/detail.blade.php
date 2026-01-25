@@ -7,7 +7,7 @@
 
                 {{-- LEFT --}}
                 <div class="space-y-4">
-                    <p data-ns-animate data-delay="0.4" class="text-white/80 leading-relaxed">
+                    <p data-ns-animate data-delay="0.4" class="text-white/80 leading-relaxed font-bold">
                         {{ $service->overview }}
                     </p>
                 </div>
@@ -49,9 +49,17 @@
                                 {{ $service->sec1_title }}
                             </h2>
 
-                            <div data-ns-animate data-delay="0.2"
-                                 class="prose prose-invert max-w-none text-white">
-                                {!! html_entity_decode($service->sec1_content) !!}
+                            <div data-ns-animate data-delay="0.2" class="prose prose-invert max-w-none text-white [&_ul]:list-disc [&_ul]:ml-5 [&_li]:text-white">
+                                @php
+                                    $desc = $service->sec1_content ?? "";
+                                @endphp
+
+                                {!! preg_replace(
+                                    '/<ul>/', 
+                                    '<ul style="list-style-type: disc; margin-left: 1.25rem; color: white;">', 
+                                    $desc
+                                ) !!}
+                                {{-- {!! $service->sec1_content !!} --}}
                             </div>
                         </div>
                     @endif
@@ -63,9 +71,17 @@
                                 {{ $service->sec2_title }}
                             </h2>
 
-                            <div data-ns-animate data-delay="0.3"
-                                 class="prose prose-invert max-w-none text-white">
-                                {!! html_entity_decode($service->sec2_content) !!}
+                            <div data-ns-animate data-delay="0.3" class="text-white [&_ul]:list-disc [&_ul]:ml-5 [&_li]:text-white">
+                                @php
+                                    $desc = $service->sec2_content ?? "";
+                                @endphp
+
+                                {!! preg_replace(
+                                    '/<ul>/', 
+                                    '<ul style="list-style-type: disc; margin-left: 1.25rem; color: white;">', 
+                                    $desc
+                                ) !!}
+                                {{-- {!! $service->sec2_content !!} --}}
                             </div>
                         </div>
                     @endif

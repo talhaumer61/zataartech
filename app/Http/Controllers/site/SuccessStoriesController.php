@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\site;
 
 use App\Http\Controllers\Controller;
+use App\Models\PagesContent;
 use App\Models\SuccessStory;
 use App\Models\Testimonial;
 
@@ -14,8 +15,9 @@ class SuccessStoriesController extends Controller
             ->where('status', 1)
             ->latest()
             ->paginate(6); // paginate 6 per page
+        $pagesContent = PagesContent::latest()->first();
 
-        return view('site.success_stories', compact('stories'));
+        return view('site.success_stories', compact('stories','pagesContent'));
     }
 
     public function detail($href = null)

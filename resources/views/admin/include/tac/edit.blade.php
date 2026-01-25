@@ -50,7 +50,7 @@
 
                         <div class="col-md-12">
                             <label class="form-label">Content *</label>
-                            <textarea name="content" class="form-control"  rows="6">
+                            <textarea name="content" class="form-control" id="ckeditor" rows="6">
                                 {{ old('content',$term->content ?? '') }}
                             </textarea>
                         </div>

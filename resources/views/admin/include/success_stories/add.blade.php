@@ -47,15 +47,31 @@
                                 </div>
                             </div>
 
-                            <div class="mb-3">
-                                <label>Linked Service (optional)</label>
-                                <select name="id_service" class="form-select">
-                                    <option value="">-- Select Service --</option>
-                                    @foreach($services as $service)
-                                        <option value="{{ $service->id }}">{{ $service->title }}</option>
-                                    @endforeach
-                                </select>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Linked Service (optional)</label>
+                                        <select name="id_service" class="form-select">
+                                            <option value="">-- Select Service --</option>
+                                            @foreach($services as $service)
+                                                <option value="{{ $service->id }}">{{ $service->title }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label>Date</label>
+                                        <input 
+                                            type="date" 
+                                            name="dated" 
+                                            class="form-control"
+                                            value="{{ old('dated') }}"
+                                        >
+                                    </div>
+                                </div>
                             </div>
+                            
 
                             <div class="mb-3">
                                 <label>Problem</label>

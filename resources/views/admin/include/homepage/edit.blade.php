@@ -20,6 +20,7 @@
                                 <option value="0" {{ $homePage->status == 0 ? 'selected' : '' }}>Inactive</option>
                             </select>
                         </div> --}}
+                        <h4 class="mt-3 mb-2 fw-bold text-center">Home Page</h4>
 
                         {{-- Services Section --}}
                         <h5 class="mt-4 mb-2 fw-bold text-primary">Services Section</h5>
@@ -145,6 +146,40 @@
                             <label class="form-label fw-semibold">Description</label>
                             <textarea name="footer_text" class="form-control" rows="2">{{ $homePage->footer_text }}</textarea>
                         </div>
+
+                        {{-- Stories Section --}}
+                        <h4 class="mt-4 mb-2 fw-bold text-center">Stories Page</h4>
+                        <div class="col-md-12">
+                            <label class="form-label fw-semibold">Heading</label>
+                            <input type="text" name="stories_heading" class="form-control"
+                                value="{{ $pagesContent->stories_heading ?? '' }}">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-semibold">Description</label>
+                            <textarea name="stories_desc" class="form-control" rows="3">
+                                {{ $pagesContent->stories_desc ?? '' }}
+                            </textarea>
+                        </div>
+
+                        {{-- Team Section --}}
+                        <h4 class="mt-4 mb-2 fw-bold text-center">About Us Page</h4>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Team Tag</label>
+                            <input type="text" name="team_tag" class="form-control"
+                                value="{{ $pagesContent->team_tag ?? '' }}">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Team Heading</label>
+                            <input type="text" name="team_heading" class="form-control"
+                                value="{{ $pagesContent->team_heading ?? '' }}">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-semibold">team Description</label>
+                            <textarea name="team_desc" class="form-control" rows="3">
+                                {{ $pagesContent->team_desc ?? '' }}
+                            </textarea>
+                        </div>
+
                     </div>
 
                     <div class="mt-4 text-end">

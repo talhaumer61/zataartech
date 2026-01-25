@@ -29,6 +29,7 @@ class AdminSuccessStoriesController extends Controller
         $request->validate([
             'title'       => 'required|string|max:255',
             'id_service'  => 'nullable|exists:services,id',
+            'dated'       => 'nullable|date',
             'problem'     => 'nullable|string',
             'solution'    => 'nullable|string',
             'results'     => 'nullable|string',
@@ -48,6 +49,7 @@ class AdminSuccessStoriesController extends Controller
             'title'       => $request->title,
             'href'        => Str::slug($request->title),
             'id_service'  => $request->id_service,
+            'dated'      => $request->dated,
             'photo'       => $photoPath,
             'problem'     => $request->problem,
             'solution'    => $request->solution,
@@ -67,6 +69,7 @@ class AdminSuccessStoriesController extends Controller
         $request->validate([
             'title'       => 'required|string|max:255',
             'id_service'  => 'nullable|exists:services,id',
+            'dated'       => 'nullable|date',
             'problem'     => 'nullable|string',
             'solution'    => 'nullable|string',
             'results'     => 'nullable|string',
@@ -89,6 +92,7 @@ class AdminSuccessStoriesController extends Controller
             'title'       => $request->title,
             'href'        => Str::slug($request->title),
             'id_service'  => $request->id_service,
+            'dated'      => $request->dated,
             'photo'       => $photoPath,
             'problem'     => $request->problem,
             'solution'    => $request->solution,

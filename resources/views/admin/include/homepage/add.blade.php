@@ -132,6 +132,34 @@
                             <label class="form-label fw-semibold">Description</label>
                             <textarea name="footer_text" class="form-control" rows="2"></textarea>
                         </div>
+
+                        {{-- Stories Section --}}
+                        <hr>
+                        <h4 class="mt-4 mb-2 fw-bold text-primary text-center">Stories Page</h4>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Heading</label>
+                            <input type="text" name="stories_heading" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-semibold">Description</label>
+                            <textarea name="stories_desc" class="form-control" rows="3"></textarea>
+                        </div>
+
+                        {{-- Team Section --}}
+                        <h5 class="mt-4 mb-2 fw-bold text-primary">Team Section</h5>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Tag</label>
+                            <input type="text" name="team_tag" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Heading</label>
+                            <input type="text" name="team_heading" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label fw-semibold">Description</label>
+                            <textarea name="team_desc" class="form-control" rows="3"></textarea>
+                        </div>
+
                     </div>
 
                     <div class="mt-4 text-end">

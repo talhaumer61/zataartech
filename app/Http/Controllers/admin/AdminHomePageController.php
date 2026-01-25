@@ -4,6 +4,7 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\HomePage;
+use App\Models\PagesContent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -22,8 +23,9 @@ class AdminHomePageController extends Controller
 
         // Get latest (active) home page record
         $homePageRecord = HomePage::whereNull('deleted_at')->latest()->first();
+        $pagesContent = PagesContent::latest()->first();
 
-        return view('admin.homepage', compact('action', 'homePage', 'homePageRecord'));
+        return view('admin.homepage', compact('action', 'homePage', 'homePageRecord', 'pagesContent'));
     }
 
     /**
@@ -63,6 +65,14 @@ class AdminHomePageController extends Controller
             'reviews_desc' => 'nullable|string',
 
             'footer_text' => 'nullable|string',
+
+            'stories_heading' => 'nullable|string|max:255',
+            'stories_desc'    => 'nullable|string',
+
+            'team_tag'        => 'nullable|string|max:255',
+            'team_heading'    => 'nullable|string|max:255',
+            'team_desc'       => 'nullable|string',
+
         ]);
 
         // Handle image uploads using helper
@@ -75,6 +85,16 @@ class AdminHomePageController extends Controller
         }
 
         HomePage::create($validated + ['status' => 1]);
+
+        PagesContent::create([
+            'stories_heading' => $request->stories_heading,
+            'stories_desc'    => $request->stories_desc,
+            'team_tag'        => $request->team_tag,
+            'team_heading'    => $request->team_heading,
+            'team_desc'       => $request->team_desc,
+            'status'          => 1,
+        ]);
+
 
         sessionMsg('success', 'Home Page content added successfully!', 'success');
         return redirect()->route('admin.homepage');
@@ -119,6 +139,13 @@ class AdminHomePageController extends Controller
             'reviews_desc' => 'nullable|string',
 
             'footer_text' => 'nullable|string',
+            'stories_heading' => 'nullable|string|max:255',
+            'stories_desc'    => 'nullable|string',
+
+            'team_tag'        => 'nullable|string|max:255',
+            'team_heading'    => 'nullable|string|max:255',
+            'team_desc'       => 'nullable|string',
+
         ]);
 
         // Handle image updates (replace old ones if new uploaded)
@@ -136,6 +163,17 @@ class AdminHomePageController extends Controller
         }
 
         $homePage->update($validated);
+        PagesContent::updateOrCreate(
+            ['status' => 1], // single active record
+            [
+                'stories_heading' => $request->stories_heading,
+                'stories_desc'    => $request->stories_desc,
+                'team_tag'        => $request->team_tag,
+                'team_heading'    => $request->team_heading,
+                'team_desc'       => $request->team_desc,
+            ]
+        );
+
 
         sessionMsg('success', 'Home Page content updated successfully!', 'success');
         return redirect()->route('admin.homepage');

@@ -2,11 +2,10 @@
   <div class="main-container">
     <div class="text-center space-y-3 mb-14 md:mb-[70px]">
       <h2 data-ns-animate="" data-delay="0.2">
-        Our latest
-        <span class="text-primary-500 inline-block">Success Stories</span>
+        {{ $pagesContent->stories_heading ?? '' }}
       </h2>
       <p class="max-w-[738px] mx-auto">
-        Discover how our clients overcame challenges and achieved remarkable results through our tailored solutions.
+        {{ $pagesContent->stories_desc ?? '' }}
       </p>
     </div>
 

@@ -1,9 +1,12 @@
-<section class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]">
+<section class="pt-14 md:pt-16 lg:pt-[25px] xl:pt-[35px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]">
   <div class="main-container">
     <div class="mb-14 md:mb-[70px] space-y-3 text-center">
-      <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->heading ?? "Over a decade of experience in this field" }}</h2>
+      @if ($about->tag)
+        <span data-ns-animate="" data-delay="0.2" class="badge badge-cyan mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->tag ? $about->tag : ''  }}</span>
+      @endif
+      <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $about->heading ?? "" }}</h2>
       <p data-ns-animate="" data-delay="0.3" class="max-w-[744px] mx-auto" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
-        {!! $about->detail ?? "ZataarTech is a leading technology solutions company dedicated to crafting innovative digital experiences. We specialize in custom software development, web applications, and business automation tools designed to help organizations streamline operations and scale effectively." !!}
+        {!! $about->detail ?? "" !!}
       </p>
     </div>
 

@@ -131,12 +131,12 @@
         <li class="sidebar-list">
           <a class="sidebar-link sidebar-title link-nav" href="/portal/homepage">
             <svg class="stroke-icon"> 
-              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-calendar')}}"></use>
+              <use href="{{asset('admin/svg/icon-sprite.svg#stroke-file')}}"></use>
             </svg>
             <svg class="fill-icon">
               <use href="{{asset('admin/svg/icon-sprite.svg#fill-widget')}}"></use>
             </svg>
-            <span>Home Page Content</span>
+            <span>Pages Content</span>
           </a>
         </li>
         <li class="sidebar-list">

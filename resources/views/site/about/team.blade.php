@@ -1,9 +1,9 @@
 <section class="bg-background-3 dark:bg-background-7 py-[100px]">
   <div class="main-container">
     <div class="max-w-[620px] text-center mx-auto mb-[70px]">
-      <span class="badge badge-cyan mb-5">Our Team</span>
-      <h2 class="mb-3">Our innovative, dynamic, and talented team</h2>
-      <p>Our innovative, dynamic, and talented team is the driving force behind our success.</p>
+      <span class="badge badge-cyan mb-5">{{ $pagesContent->team_tag ?? ''}}</span>
+      <h2 class="mb-3">{{ $pagesContent->team_heading ?? '' }}</h2>
+      <p>{{ $pagesContent->team_desc ?? '' }}</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 justify-center mb-14">

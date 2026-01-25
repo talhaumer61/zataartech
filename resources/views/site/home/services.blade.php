@@ -2,7 +2,7 @@
   <div class="main-container">
     <!-- Service Header Section-->
     <div class="text-center mb-[70px] max-w-[880px] mx-auto">
-      <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+      <span data-ns-animate="" data-delay="0.1" class="badge badge-yellow-v2 mb-5 capitalize" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
         {{$home->services_tag?? "Our Services"}}
       </span>
       <h2 data-ns-animate="" data-delay="0.2" class="mb-3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">

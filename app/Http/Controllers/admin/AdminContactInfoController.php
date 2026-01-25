@@ -24,7 +24,7 @@ class AdminContactInfoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'heading' => 'required|string|max:255',
+            'heading' => 'nullable|string|max:255',
             'description' => 'nullable|string',
             'address1' => 'nullable|string|max:255',
             'address2' => 'nullable|string|max:255',
@@ -47,7 +47,7 @@ class AdminContactInfoController extends Controller
         $contact = ContactInfo::findOrFail($id);
 
         $request->validate([
-            'heading' => 'required|string|max:255',
+            'heading' => 'nullable|string|max:255',
             'description' => 'nullable|string',
             'address1' => 'nullable|string|max:255',
             'address2' => 'nullable|string|max:255',

@@ -16,8 +16,7 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <label class="form-label fw-semibold">Heading <span class="text-danger">*</span></label>
-                            <input type="text" name="heading" class="form-control" required
-                                value="{{ old('heading', $contact->heading ?? '') }}">
+                            <input type="text" name="heading" class="form-control" value="{{ old('heading', $contact->heading ?? '') }}">
                         </div>
 
                         <div class="col-12">

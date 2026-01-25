@@ -26,6 +26,7 @@ class AdminAboutUsController extends Controller
         $request->validate([
             'about_us' => 'nullable|string',
             'heading' => 'nullable|string',
+            'tag' => 'nullable|string',
             'mission_tag' => 'nullable|string',
             'mission_heading' => 'nullable|string',
             'mission' => 'nullable|string',
@@ -45,6 +46,7 @@ class AdminAboutUsController extends Controller
         AboutUs::create([
             'about_us' => $request->about_us,
             'heading' => $request->heading,
+            'tag' => $request->tag,
             'mission_tag' => $request->mission_tag,
             'mission_heading' => $request->mission_heading,
             'mission' => $request->mission,
@@ -65,6 +67,7 @@ class AdminAboutUsController extends Controller
         $request->validate([
             'about_us' => 'nullable|string',
             'heading' => 'nullable|string',
+            'tag' => 'nullable|string',
             'mission_tag' => 'nullable|string',
             'mission_heading' => 'nullable|string',
             'mission' => 'nullable|string',
@@ -87,6 +90,7 @@ class AdminAboutUsController extends Controller
         $about->update([
             'about_us' => $request->about_us,
             'heading' => $request->heading,
+            'tag' => $request->tag,
             'mission_tag' => $request->mission_tag,
             'mission_heading' => $request->mission_heading,
             'mission' => $request->mission,

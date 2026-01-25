@@ -72,7 +72,7 @@
     <div class="space-y-[70px]">
       <!-- heading  -->
       <div class="max-w-[680px] mx-auto text-center space-y-3">
-        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading ?? "Get in Touch With Us" }}</h2>
+        <h2 data-ns-animate="" data-delay="0.2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">{{ $contact->heading ?? "" }}</h2>
         <p data-ns-animate="" data-delay="0.3" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
           {{ $contact->description ?? "" }}
         </p>
