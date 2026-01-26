@@ -94,9 +94,9 @@
                                 <h4 data-ns-animate data-delay="0.1" class="text-heading-2">
                                     What our users say
                                 </h4>
-                                <p data-ns-animate data-delay="0.2" class="text-tagline-1 text-white/80">
+                                {{-- <p data-ns-animate data-delay="0.2" class="text-tagline-1 text-white/80">
                                     “Zataar Tech delivered our entire platform ahead of schedule—flawless execution and real partnership.”
-                                </p>
+                                </p> --}}
                             </div>
 
                             <div data-ns-animate data-delay="0.1"

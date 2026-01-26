@@ -7,7 +7,7 @@
         <span class="mx-2">-</span>
         <a href="#" class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300">Success Stories</a>
       </span>
-      <h1 data-ns-animate="" data-delay="0.2" class="font-normal lg:text-heading-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Case study</h1>
+      <h1 data-ns-animate="" data-delay="0.2" class="font-normal lg:text-heading-2" style="opacity: 1; filter: blur(0px); translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Success Stories</h1>
     </div>
   </div>
 </section>
