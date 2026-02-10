@@ -112,10 +112,10 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Email Us</p>
                 <p class="text-accent/60">
-                  <a href="mailto:{{ $contact->email1 }}">{{ $contact->email1 ?? "N/A" }}</a>
+                  <a href="mailto:{{ $contact->email1 }}">{{ $contact->email1 ?? "" }}</a>
                 </p>
                 <p class="text-accent/60">
-                  <a href="mailto:{{$contact->email2}}">{{ $contact->email2 ?? "N/A" }}</a>
+                  <a href="mailto:{{$contact->email2}}">{{ $contact->email2 ?? "" }}</a>
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@
               <div class="space-y-2.5">
                 <p class="text-heading-6 text-accent">Call Us</p>
                 <p class="text-accent/60">
-                  <a href="tel:{{$contact->phone1}}">{{ $contact->phone1 ?? "N/A" }}</a>
+                  <a href="tel:{{$contact->phone1}}">{{ $contact->phone1 ?? "" }}</a>
                 </p>
               </div>
             </div>
